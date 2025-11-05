@@ -109,9 +109,50 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 ## 2. List Formatting
 
-### 2.1 Bullet Lists
+### 2.1 Unicode Bullet Conversion (CRITICAL)
 
-**Marker**: Use standard markdown `-` for all bullets
+**Source Format**: PDF extraction yields three types of unicode bullets representing hierarchy:
+- `●` (U+25CF) - Filled circle - **First level** (no indentation)
+- `○` (U+25CB) - Hollow circle - **Second level** (2 space indent)
+- `■` (U+25A0) - Filled square - **Third level** (4 space indent)
+
+**Target Format**: Standard markdown bullets with hierarchical indentation
+
+**Conversion Rules**:
+| Unicode Bullet | Level | Markdown Output | Indentation |
+| --- | --- | --- | --- |
+| `●` (filled circle) | Level 1 | `- ` | 0 spaces |
+| `○` (hollow circle) | Level 2 | `  - ` | 2 spaces |
+| `■` (filled square) | Level 3 | `    - ` | 4 spaces |
+
+**Example Transformation**:
+
+**Source (with unicode bullets)**:
+```
+● Get!
+○ The needed supplies include:
+■ Daycare diaper supplies bag.
+■ The child's diaper supplies bag.
+○ Always verify the mat is clean.
+```
+
+**Target (markdown with indentation)**:
+```markdown
+- Get!
+  - The needed supplies include:
+    - Daycare diaper supplies bag.
+    - The child's diaper supplies bag.
+  - Always verify the mat is clean.
+```
+
+**CRITICAL NOTES**:
+- Unicode bullets `●○■` are LIST MARKERS and must be converted to markdown bullets
+- Unicode brackets `˹˺` are CONTENT MARKERS and must be PRESERVED (see Section 3)
+- Do not confuse bullets with brackets - completely different purposes
+
+### 2.2 Bullet Lists
+
+**Marker**: Use standard markdown `-` for all bullets (after converting from unicode)
 
 **Example**:
 ```markdown
@@ -127,7 +168,7 @@ This document defines the formatting template for reformatting the EL Caregiver 
 - Single blank line before and after list block
 - No blank lines between list items
 
-### 2.2 Nested Bullets
+### 2.3 Nested Bullets
 
 **Pattern**: Indent with 2 spaces per level
 
@@ -143,8 +184,9 @@ This document defines the formatting template for reformatting the EL Caregiver 
 - Use `-` for all levels (nested bullets also use `-`)
 - 2 spaces for each indentation level
 - Consistent indentation throughout
+- Maximum depth: 3 levels (matching source document structure)
 
-### 2.3 Numbered Lists
+### 2.4 Numbered Lists
 
 **Pattern**: Standard markdown numbered lists
 
@@ -369,7 +411,7 @@ CHAPTER 0. FRONT MATTER
 - Removed duplicate chapter headings
 - Used # for H1, ## for H2
 
-### 9.2 List Transformation
+### 9.2 List Transformation (Simple)
 
 **Source (PDF text)**:
 ```
@@ -387,6 +429,41 @@ months are checked more frequently.
 **Changes**:
 - Joined wrapped lines into single lines
 - Converted unicode bullet `●` to markdown bullet `-`
+- Preserved exact text content
+
+### 9.2b List Transformation (Hierarchical)
+
+**Source (PDF text)**:
+```
+● Check!
+○ Check the diaper to confirm that the child needs a diaper change.
+○ Check on the register about whether the child is supposed to receive diaper-rash cream.
+● Get!
+○ Get the needed supplies and place them on the diaper changing mat.
+○ The needed supplies include:
+■ Daycare diaper supplies bag.
+■ The child's diaper supplies bag.
+■ The diaper changing mat.
+```
+
+**Markdown Output**:
+```markdown
+- Check!
+  - Check the diaper to confirm that the child needs a diaper change.
+  - Check on the register about whether the child is supposed to receive diaper-rash cream.
+- Get!
+  - Get the needed supplies and place them on the diaper changing mat.
+  - The needed supplies include:
+    - Daycare diaper supplies bag.
+    - The child's diaper supplies bag.
+    - The diaper changing mat.
+```
+
+**Changes**:
+- Converted `●` (filled circle) to `-` (no indent)
+- Converted `○` (hollow circle) to `  -` (2 space indent)
+- Converted `■` (filled square) to `    -` (4 space indent)
+- Maintained hierarchical relationship between items
 - Preserved exact text content
 
 ### 9.3 Unicode Bracket Transformation

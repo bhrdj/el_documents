@@ -63,6 +63,7 @@ Verify that all reformatted chapters maintain consistent formatting and complete
 - What happens when heading levels in the source document are inconsistent?
 - How are images, diagrams, or figures handled in the markdown output?
 - What happens if unicode brackets appear in headings or special formatting contexts?
+- **Unicode Bullets**: Raw extracted chapters contain three types of unicode bullets (`●` filled circle, `○` hollow circle, `■` filled square) that represent three levels of list hierarchy and must be converted to properly indented markdown bullets
 
 ## Requirements
 
@@ -76,6 +77,7 @@ Verify that all reformatted chapters maintain consistent formatting and complete
 - **FR-006**: System MUST preserve document structure including headings, lists, tables, and semantic elements
 - **FR-007**: System MUST ensure consistent heading levels across all reformatted chapters
 - **FR-008**: System MUST ensure consistent list formatting (bullet style, indentation) across all chapters
+- **FR-011**: System MUST convert unicode bullet characters (`●` filled circle, `○` hollow circle, `■` filled square) to hierarchical markdown bullets with proper indentation (0, 2, and 4 spaces respectively)
 - **FR-009**: System MUST process chapters systematically, either chapter-by-chapter or section-by-section for large chapters
 - **FR-010**: System MUST maintain consistent spacing and typography throughout reformatted content
 

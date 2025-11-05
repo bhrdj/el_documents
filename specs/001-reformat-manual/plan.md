@@ -52,16 +52,41 @@ scripts/
         └── markdown_utils.py    # Markdown formatting utilities
 
 output/
-└── reformatted_manual/
-    ├── chapter_00.md
-    ├── chapter_01.md
-    ├── chapter_02.md
-    └── [... additional chapters]
+└── chapters/                    # Versioned processing pipeline
+    ├── README.md                # Documents pipeline stages concept
+    ├── 00_raw/                  # Raw PDF extraction
+    │   ├── chapter_0.md
+    │   ├── chapter_1.md
+    │   └── [...]
+    ├── 01_basicreformat/        # (SKIPPED - not used)
+    ├── 02_removedbullets/       # Unicode bullets converted to markdown
+    │   ├── chapter_00.md
+    │   ├── chapter_01.md
+    │   ├── chapter_02.md
+    │   ├── [...]
+    │   └── CONVERSION_REPORT.md
+    ├── 03_edited/               # Editorial review and quality improvements
+    │   ├── chapter_00.md
+    │   ├── chapter_07.md
+    │   ├── chapter_08.md
+    │   ├── chapter_00_changes.md
+    │   ├── chapter_07_changes.md
+    │   ├── chapter_08_changes.md
+    │   └── EDITORIAL_REPORT.md
+    └── [future stages: 04_*, 05_*, ...]
 
 requirements.txt             # Updated with PDF processing dependencies
 ```
 
 **Structure Decision**: Simple script-based approach with utilities. No complex framework needed for one-time document processing. Scripts can be run individually or orchestrated manually.
+
+**Pipeline Stages**: Outputs are organized in numbered folders (`NN_description/`) representing processing stages. Each stage takes input from the previous stage and produces transformed output. This provides:
+- **Traceability**: Compare outputs at different stages
+- **Reproducibility**: Re-run any stage using previous stage as input
+- **Debugging**: Identify where issues were introduced
+- **Version Control**: All stages committed to git for historical tracking
+
+See `output/chapters/README.md` for complete pipeline documentation.
 
 ## Implementation Approach
 
@@ -115,10 +140,14 @@ requirements.txt             # Updated with PDF processing dependencies
 **Tasks**:
 1. Implement `markdown_utils.py` with functions:
    - Apply heading formatting based on template
-   - Format lists (bullets, numbering, indentation)
+   - **Convert unicode bullets to hierarchical markdown**:
+     - `●` (filled circle) → `- ` (level 1, no indent)
+     - `○` (hollow circle) → `  - ` (level 2, 2-space indent)
+     - `■` (filled square) → `    - ` (level 3, 4-space indent)
+   - Format numbered lists
    - Format tables in markdown
    - Apply spacing rules
-   - Preserve unicode brackets
+   - **Preserve unicode brackets** `˹˺` (content markers, NOT list markers)
 2. Implement `reformat_chapter.py`:
    - Read extracted chapter content
    - Apply formatting template rules
@@ -142,8 +171,9 @@ requirements.txt             # Updated with PDF processing dependencies
 1. Implement `validate_output.py`:
    - Check vanilla markdown validity (no HTML, no extended syntax)
    - Validate heading hierarchy consistency
-   - Check list formatting consistency
-   - Validate unicode bracket preservation
+   - Check list formatting consistency (proper indentation)
+   - **Verify unicode bullets `●○■` converted to markdown bullets**
+   - **Validate unicode brackets `˹˺` preserved** (should not be removed)
 2. Manual review:
    - Compare each chapter against source PDF
    - Verify no content additions/deletions/modifications

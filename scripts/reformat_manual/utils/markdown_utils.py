@@ -238,9 +238,114 @@ def detect_list_type(text: str) -> Optional[str]:
     return None
 
 
+def detect_unicode_bullets(line: str) -> tuple[bool, str, int]:
+    """
+    Detect unicode bullet and return bullet info.
+
+    The PDF extraction produces three types of unicode bullets representing hierarchy:
+    - ● (U+25CF) - Filled circle - Level 1
+    - ○ (U+25CB) - Hollow circle - Level 2
+    - ■ (U+25A0) - Filled square - Level 3
+
+    Args:
+        line: Text line to analyze
+
+    Returns:
+        Tuple of (has_bullet, bullet_char, level):
+        - has_bullet: True if line starts with unicode bullet
+        - bullet_char: The unicode character found ('●', '○', '■', or '')
+        - level: Indentation level (1, 2, 3, or 0 if no bullet)
+    """
+    stripped = line.lstrip()
+
+    if stripped.startswith('●'):
+        return (True, '●', 1)
+    elif stripped.startswith('○'):
+        return (True, '○', 2)
+    elif stripped.startswith('■'):
+        return (True, '■', 3)
+    else:
+        return (False, '', 0)
+
+
+def convert_unicode_bullet_to_markdown(line: str) -> str:
+    """
+    Convert a single line with unicode bullet to markdown bullet with proper indentation.
+
+    Conversion rules:
+    - ● (filled circle) → - (no indent, level 1)
+    - ○ (hollow circle) →   - (2 space indent, level 2)
+    - ■ (filled square) →     - (4 space indent, level 3)
+
+    Unicode brackets ˹˺ are preserved as they are content markers, not list markers.
+
+    Args:
+        line: Text line that may contain unicode bullet
+
+    Returns:
+        Line converted to markdown format with proper indentation
+
+    Examples:
+        '● Item' -> '- Item'
+        '○ Nested item' -> '  - Nested item'
+        '■ Deep nested' -> '    - Deep nested'
+        '● ˹Guide˺ operations' -> '- ˹Guide˺ operations'
+    """
+    has_bullet, bullet_char, level = detect_unicode_bullets(line)
+
+    if not has_bullet:
+        return line  # No bullet, return as-is
+
+    # Remove the unicode bullet and any following space
+    content = line.lstrip().lstrip('●○■').lstrip()
+
+    # Build markdown bullet with appropriate indentation
+    # Level 1: 0 spaces, Level 2: 2 spaces, Level 3: 4 spaces
+    indent = '  ' * (level - 1)
+    return f"{indent}- {content}"
+
+
+def convert_document_bullets(content: str) -> str:
+    """
+    Convert all unicode bullets in document to markdown format.
+
+    Processes entire document, converting unicode bullet characters to standard
+    markdown bullets with proper hierarchical indentation while preserving all
+    other content including unicode brackets.
+
+    Preserves:
+    - Unicode brackets ˹˺ (content markers)
+    - Heading structure
+    - Non-list content
+    - Blank lines and spacing
+
+    Args:
+        content: Full document text with unicode bullets
+
+    Returns:
+        Document with all unicode bullets converted to markdown format
+    """
+    lines = content.split('\n')
+    result = []
+
+    for line in lines:
+        has_bullet, _, _ = detect_unicode_bullets(line)
+
+        if has_bullet:
+            converted = convert_unicode_bullet_to_markdown(line)
+            result.append(converted)
+        else:
+            # Not a bullet line - preserve as-is
+            result.append(line)
+
+    return '\n'.join(result)
+
+
 def convert_bullet_to_markdown(text: str) -> str:
     """
     Convert unicode bullet characters to standard markdown bullets.
+
+    DEPRECATED: Use convert_document_bullets() instead for proper hierarchical conversion.
 
     Args:
         text: Text that may contain unicode bullets
