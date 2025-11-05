@@ -197,12 +197,28 @@ def find_chapter_boundaries(pdf_path: str) -> List[Dict[str, any]]:
             # Common patterns: "Chapter N", "CHAPTER N", "Section N"
             chapter_pattern = r'^(CHAPTER|Chapter|SECTION|Section)\s+(\d+|[IVXLCDM]+)'
 
+            # Special pattern for "RELOCATIONS, ADDITIONS" section
+            relocations_pattern = r'^RELOCATIONS,?\s*ADDITIONS:?'
+
             lines = text.split('\n')
             for line in lines[:5]:  # Check first 5 lines of page
-                match = re.search(chapter_pattern, line.strip())
+                line_stripped = line.strip()
+
+                # Check for RELOCATIONS, ADDITIONS first
+                if re.search(relocations_pattern, line_stripped, re.IGNORECASE):
+                    chapters.append({
+                        'chapter_marker': 'RELOCATIONS, ADDITIONS',
+                        'page_number': page_num,
+                        'chapter_type': 'CHAPTER',
+                        'chapter_number': '9'
+                    })
+                    break
+
+                # Then check for standard chapter patterns
+                match = re.search(chapter_pattern, line_stripped)
                 if match:
                     chapters.append({
-                        'chapter_marker': line.strip(),
+                        'chapter_marker': line_stripped,
                         'page_number': page_num,
                         'chapter_type': match.group(1),
                         'chapter_number': match.group(2)

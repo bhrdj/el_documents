@@ -7,9 +7,10 @@ Scripts for extracting and reformatting the EL Caregiver Manual from PDF to vani
 **Phase Completed**: PDF Extraction (Phase 1)
 
 - Chapter boundary detection implemented and tested
-- All 9 chapters successfully extracted from `EL_CgManual_CURRENT_v016.pdf`
+- All 10 chapters successfully extracted from `EL_CgManual_CURRENT_v016.pdf`
 - Raw extractions stored in pipeline structure for multi-phase processing
 - Batch extraction script created for reproducibility
+- Chapter 8 split into separate chapters (8: Stories, 9: Relocations/Additions)
 
 **Next Phase**: Basic Reformatting (Phase 2) - Apply formatting guide rules
 
@@ -26,7 +27,8 @@ output/chapters/
 │   ├── chapter_5_part1.md
 │   ├── chapter_5_part2.md
 │   ├── chapter_7.md
-│   └── chapter_8.md
+│   ├── chapter_8.md
+│   └── chapter_9.md
 └── 01_basicreformat/ # Formatted chapters (planned)
 ```
 
@@ -92,26 +94,33 @@ Core PDF extraction utilities.
 **Functions**:
 - `extract_chapter()`: Extract single chapter with metadata
 - `extract_text_by_page()`: Extract text from page range
-- `find_chapter_boundaries()`: Detect chapter markers in PDF
+- `find_chapter_boundaries()`: Detect chapter markers in PDF (includes special handling for "RELOCATIONS, ADDITIONS" section)
 - `preserve_unicode()`: Ensure unicode character preservation
+
+**Chapter Detection**:
+- Standard pattern: `CHAPTER N` or `Chapter N` (where N is a number or Roman numeral)
+- Special case: `RELOCATIONS, ADDITIONS` detected as Chapter 9
 
 ## Chapter Structure
 
-The manual contains **9 chapter sections** (out of order):
+The manual contains **10 chapter sections** (out of order):
 
-| File | Chapter | Title | Pages | Size |
-|------|---------|-------|-------|------|
-| chapter_0.md | 0 | Front Matter | 2-8 | 7.1K |
-| chapter_2.md | 2 | Child Care | 9-30 | 29K |
-| chapter_3.md | 3 | Safety and Hygiene | 31-48 | 23K |
-| chapter_4.md | 4 | Child Interaction Strategies | 49-89 | 50K |
-| chapter_5_part1.md | 5.1 | Structured Enrichment (Part 1) | 90-198 | 136K |
-| chapter_5_part2.md | 5.2 | Structured Enrichment (Part 2) | 199-305 | 129K |
-| chapter_1.md | 1 | Child Admission | 306-346 | 53K |
-| chapter_7.md | 7 | Staff Staying in Daycare | 347-351 | 3.4K |
-| chapter_8.md | 8 | Caregiver Challenge Stories | 352-end | 35K |
+| File | Chapter | Title | Pages | Size | Lines |
+|------|---------|-------|-------|------|-------|
+| chapter_0.md | 0 | Front Matter | 2-8 | 7.1K | 125 |
+| chapter_2.md | 2 | Child Care | 9-30 | 29K | 549 |
+| chapter_3.md | 3 | Safety and Hygiene | 31-48 | 23K | 453 |
+| chapter_4.md | 4 | Child Interaction Strategies | 49-89 | 50K | 987 |
+| chapter_5_part1.md | 5.1 | Structured Enrichment (Part 1) | 90-198 | 136K | 2954 |
+| chapter_5_part2.md | 5.2 | Structured Enrichment (Part 2) | 199-305 | 129K | 2705 |
+| chapter_1.md | 1 | Child Admission | 306-346 | 53K | 1019 |
+| chapter_7.md | 7 | Staff Staying in Daycare | 347-351 | 3.4K | 75 |
+| chapter_8.md | 8 | Caregiver Challenge Stories | 352-353 | 3.1K | 41 |
+| chapter_9.md | 9 | Relocations, Additions | 354-end | 32K | 605 |
 
-**Note**: Chapters appear out of numerical order in the source PDF. This is preserved in extraction.
+**Notes**:
+- Chapters appear out of numerical order in the source PDF. This is preserved in extraction.
+- Chapter 8 was split from original extraction: Stories remain in ch8, Relocations/Additions moved to ch9.
 
 ## Dependencies
 
