@@ -1,3 +1,58 @@
+# CHAPTER 9: RELOCATIONS AND ADDITIONS
+
+
+## Table of Contents
+
+  - [4.0.4 Strategies](#4.0.4-strategies)
+- [4.5 Shifting Rooms Between Periods](#4.5-shifting-rooms-between-periods)
+  - [4.5.1 Ndege Class](#4.5.1-ndege-class)
+    - [4.5.1.1 Interactive Songs and Rhymes.](#4.5.1.1-interactive-songs-and-rhymes)
+    - [4.5.1.2 Storytime with Props](#4.5.1.2-storytime-with-props)
+    - [4.5.1.3 Simple Simon Says](#4.5.1.3-simple-simon-says)
+    - [4.5.1.4 Calming Breathing Exercises](#4.5.1.4-calming-breathing-exercises)
+    - [4.5.1.5 Movement Breaks](#4.5.1.5-movement-breaks)
+    - [4.5.1.6 Transition Objects](#4.5.1.6-transition-objects)
+    - [4.5.1.7 Question of the Day](#4.5.1.7-question-of-the-day)
+    - [4.5.1.8 Sensory Transition Activities](#4.5.1.8-sensory-transition-activities)
+  - [4.5.2 Gari class](#4.5.2-gari-class)
+    - [4.5.2.1 Singing Songs](#4.5.2.1-singing-songs)
+    - [4.5.2.2 Storytime with a Puppet](#4.5.2.2-storytime-with-a-puppet)
+    - [4.5.2.3 "Touch Your Head" Game](#4.5.2.3-"touch-your-head"-game)
+    - [4.5.2.4 Deep Breathing with Bubbles](#4.5.2.4-deep-breathing-with-bubbles)
+    - [4.5.2.5 Carrying a Soft Toy](#4.5.2.5-carrying-a-soft-toy)
+    - [4.5.2.6 Point and Name](#4.5.2.6-point-and-name)
+    - [4.5.2.7 Picture word Cards](#4.5.2.7-picture-word-cards)
+  - [4.4.2 Interactive Games](#4.4.2-interactive-games)
+    - [4.4.2.1 Peek-a-Boo](#4.4.2.1-peek-a-boo)
+    - [4.4.2.2 Hide and Seek (with toys)](#4.4.2.2-hide-and-seek-with-toys)
+  - [4.4.3 Creative Movement](#4.4.3-creative-movement)
+    - [4.4.3.1 Dancing](#4.4.3.1-dancing)
+    - [4.4.3.2 Obstacle Course](#4.4.3.2-obstacle-course)
+  - [4.4.4 Puppets:](#4.4.4-puppets)
+  - [4.4.5 Outdoor Exploration](#4.4.5-outdoor-exploration)
+    - [4.4.5.1 Nature Walks](#4.4.5.1-nature-walks)
+    - [4.4.5.2 Water Play](#4.4.5.2-water-play)
+  - [4.4.6 Art and Craft](#4.4.6-art-and-craft)
+    - [4.4.6.1 Finger Painting](#4.4.6.1-finger-painting)
+    - [4.4.6.2 Crayons and Paper](#4.4.6.2-crayons-and-paper)
+  - [4.4.7 Social Interaction](#4.4.7-social-interaction)
+    - [4.4.7.1 Group Activities](#4.4.7.1-group-activities)
+    - [4.4.7.2 Role Play](#4.4.7.2-role-play)
+- [4.1 PHYSICAL DEVELOPMENT IN DAYCARE](#4.1-physical-development-in-daycare)
+  - [4.1.1 Gross Motor Skills](#4.1.1-gross-motor-skills)
+    - [4.1.1.1 Crawling / Tummy Time](#4.1.1.1-crawling--tummy-time)
+    - [4.1.1.2 Monkey Lift](#4.1.1.2-monkey-lift)
+    - [4.1.1.3 Walking and Running](#4.1.1.3-walking-and-running)
+  - [4.1.2 Fine Motor Skills](#4.1.2-fine-motor-skills)
+    - [4.1.2.3 Handling large objects](#4.1.2.3-handling-large-objects)
+    - [4.1.2.1 Handling small objects](#4.1.2.1-handling-small-objects)
+    - [4.1.2.2 Wearing and removing shoes, clothes](#4.1.2.2-wearing-and-removing-shoes-clothes)
+- [4.2 COGNITIVE DEVELOPMENT IN DAYCARE](#4.2-cognitive-development-in-daycare)
+  - [4.1.1 Puzzles?](#4.1.1-puzzles?)
+  - [4.5.1 Caregiver-child conversations](#4.5.1-caregiver-child-conversations)
+
+---
+
 RELOCATIONS, ADDITIONS:
 
 RELOCATIONS, ADDITIONS:

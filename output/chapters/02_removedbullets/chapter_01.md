@@ -1,3 +1,5 @@
+# CHAPTER 1: CHILD ADMISSION
+
 CHAPTER 1. CHILD ADMISSION
 
 ## 1.1 New Interested Parents Visiting Daycare
