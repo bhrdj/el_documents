@@ -73,9 +73,13 @@ pip install -r requirements.txt
 
 ## Development Workflow
 
-**Commit Message Standards:**
-- Do not include AI tool attributions
+**Commit Message Standards (NON-NEGOTIABLE):**
+- **NEVER include AI tool attributions** (no "Generated with Claude Code", no "Co-Authored-By: Claude")
+- **NEVER include emoji or decorative elements** in commit messages
 - Keep commit messages focused on what changed and why
+- Use conventional commit format when appropriate (e.g., "feat:", "fix:", "docs:")
+- First line: concise summary (50-72 characters)
+- Optional body: detailed explanation of changes and rationale
 
 ## Environment Setup
 
