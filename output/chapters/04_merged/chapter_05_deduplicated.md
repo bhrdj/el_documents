@@ -2548,3 +2548,7 @@ b. Soft Drum Beats
   - This helps them associate sound with motion.
 - Variation:
   - Use a gentle rhythm that mimics a heartbeat to soothe them.
+
+---
+
+**NOTE: This chapter appears incomplete.** The content ends abruptly in section 5.10.7.3 (Language and sounds games) without completing all subsections. Additional content may need to be sourced from the original material or developed. See HUMAN_TODO.md for details.
