@@ -1,0 +1,65 @@
+[
+  {
+    "chapter_marker": "CHAPTER 0. FRONT MATTER",
+    "page_number": 2,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "0",
+    "end_page": 8
+  },
+  {
+    "chapter_marker": "CHAPTER 2 : CHILD CARE",
+    "page_number": 9,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "2",
+    "end_page": 30
+  },
+  {
+    "chapter_marker": "CHAPTER 3. SAFETY AND HYGIENE",
+    "page_number": 31,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "3",
+    "end_page": 48
+  },
+  {
+    "chapter_marker": "CHAPTER 4. CHILD INTERACTION STRATEGIES",
+    "page_number": 49,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "4",
+    "end_page": 89
+  },
+  {
+    "chapter_marker": "CHAPTER 5. STRUCTURED ENRICHMENT",
+    "page_number": 90,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "5",
+    "end_page": 198
+  },
+  {
+    "chapter_marker": "CHAPTER 5. STRUCTURED ENRICHMENT",
+    "page_number": 199,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "5",
+    "end_page": 305
+  },
+  {
+    "chapter_marker": "CHAPTER 1. CHILD ADMISSION",
+    "page_number": 306,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "1",
+    "end_page": 346
+  },
+  {
+    "chapter_marker": "CHAPTER 7. STAFF STAYING IN DAYCARE",
+    "page_number": 347,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "7",
+    "end_page": 351
+  },
+  {
+    "chapter_marker": "CHAPTER 8. CAREGIVER CHALLENGE STORIES",
+    "page_number": 352,
+    "chapter_type": "CHAPTER",
+    "chapter_number": "8",
+    "end_page": null
+  }
+]

@@ -1,0 +1,1678 @@
+{
+  "chapter_0": {
+    "chapter_name": "Chapter 0",
+    "page_count": 7,
+    "heading_patterns": {
+      "all_caps": [
+        {
+          "text": "CHAPTER 0. FRONT MATTER",
+          "line_num": 1
+        },
+        {
+          "text": "CHAPTER 0. FRONT MATTER",
+          "line_num": 2
+        },
+        {
+          "text": "0.1 INTRODUCTION",
+          "line_num": 3
+        },
+        {
+          "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "line_num": 4
+        },
+        {
+          "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "line_num": 5
+        },
+        {
+          "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+          "line_num": 14
+        },
+        {
+          "text": "0.1 INTRODUCTION",
+          "line_num": 18
+        },
+        {
+          "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "line_num": 29
+        },
+        {
+          "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "line_num": 36
+        },
+        {
+          "text": "??ADJUST CORE VALUES TO SIMPLIFY, AND ALSO ADD IN ASPECTS FOR OUR ADULT TEAMS, TO",
+          "line_num": 86
+        },
+        {
+          "text": "CONNECT WITH THE “PROVERBS TO GUIDE US” FOR INSTANCE…",
+          "line_num": 87
+        },
+        {
+          "text": "0.3 PROVERBS TO GUIDE US",
+          "line_num": 91
+        },
+        {
+          "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+          "line_num": 107
+        },
+        {
+          "text": "2. CHILD CARE",
+          "line_num": 123
+        }
+      ],
+      "numbered": [
+        {
+          "text": "0. FRONT MATTER Page 2 of XX",
+          "line_num": 0
+        },
+        {
+          "text": "0.1 INTRODUCTION",
+          "line_num": 3
+        },
+        {
+          "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+          "line_num": 14
+        },
+        {
+          "text": "0. FRONT MATTER Page 3 of XX",
+          "line_num": 17
+        },
+        {
+          "text": "0.1 INTRODUCTION",
+          "line_num": 18
+        },
+        {
+          "text": "0. FRONT MATTER Page 4 of XX",
+          "line_num": 35
+        },
+        {
+          "text": "0. FRONT MATTER Page 5 of XX",
+          "line_num": 63
+        },
+        {
+          "text": "1. The Child\\",
+          "line_num": 71
+        },
+        {
+          "text": "2. Comes First",
+          "line_num": 72
+        },
+        {
+          "text": "3. Caregivers Matter",
+          "line_num": 74
+        },
+        {
+          "text": "4. Play is Powerful",
+          "line_num": 76
+        },
+        {
+          "text": "5. Use What We Have",
+          "line_num": 78
+        },
+        {
+          "text": "6. Learn and Improve",
+          "line_num": 80
+        },
+        {
+          "text": "7. Every Child Deserves a Chance",
+          "line_num": 82
+        },
+        {
+          "text": "8. Family and Community Help Children Grow",
+          "line_num": 84
+        },
+        {
+          "text": "0. FRONT MATTER Page 6 of XX",
+          "line_num": 90
+        },
+        {
+          "text": "0.3 PROVERBS TO GUIDE US",
+          "line_num": 91
+        },
+        {
+          "text": "0. FRONT MATTER Page 7 of XX",
+          "line_num": 106
+        },
+        {
+          "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+          "line_num": 107
+        },
+        {
+          "text": "2. CHILD CARE",
+          "line_num": 123
+        }
+      ],
+      "bracketed": [
+        {
+          "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "line_num": 4
+        },
+        {
+          "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "line_num": 5
+        },
+        {
+          "text": "[0.2.1 EL ˹Vision˺",
+          "line_num": 6
+        },
+        {
+          "text": "[0.2.2 EL ˹Daycares Mission˺",
+          "line_num": 7
+        },
+        {
+          "text": "[0.2.3 EL Core Values",
+          "line_num": 8
+        },
+        {
+          "text": "[0.2.3.1 ˹Excellence in childcare˺:",
+          "line_num": 9
+        },
+        {
+          "text": "[0.2.3.2 ˹Motor skills development˺:",
+          "line_num": 10
+        },
+        {
+          "text": "[0.2.3.3 ˹Social and cognitive development˺",
+          "line_num": 11
+        },
+        {
+          "text": "[0.2.3.4 ˹Pre-speech linguistic development˺:",
+          "line_num": 12
+        },
+        {
+          "text": "[0.2.3.5 ˹Early literacy and numeracy˺:",
+          "line_num": 13
+        },
+        {
+          "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "line_num": 29
+        },
+        {
+          "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "line_num": 36
+        },
+        {
+          "text": "[0.2.1 EL ˹Vision˺",
+          "line_num": 37
+        },
+        {
+          "text": "[0.2.2 EL ˹Daycares Mission˺",
+          "line_num": 49
+        },
+        {
+          "text": "[0.2.3 EL Core Values",
+          "line_num": 52
+        },
+        {
+          "text": "[0.2.3.1 ˹Excellence in childcare˺:",
+          "line_num": 54
+        },
+        {
+          "text": "[0.2.3.2 ˹Motor skills development˺:",
+          "line_num": 56
+        },
+        {
+          "text": "[0.2.3.3 ˹Social and cognitive development˺",
+          "line_num": 58
+        },
+        {
+          "text": "[0.2.3.4 ˹Pre-speech linguistic development˺:",
+          "line_num": 64
+        },
+        {
+          "text": "[0.2.3.5 ˹Early literacy and numeracy˺:",
+          "line_num": 67
+        }
+      ],
+      "short_lines": [
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 15
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 33
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 61
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 88
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 104
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 121
+        },
+        {
+          "text": "2. CHILD CARE",
+          "line_num": 123
+        }
+      ]
+    },
+    "list_patterns": {
+      "bullet_markers": {
+        "●": 9
+      },
+      "numbered_lists": [
+        "0. FRONT MATTER Page 2 of XX",
+        "0. FRONT MATTER Page 3 of XX",
+        "0. FRONT MATTER Page 4 of XX",
+        "0. FRONT MATTER Page 5 of XX",
+        "1. The Child\\",
+        "2. Comes First",
+        "3. Caregivers Matter",
+        "4. Play is Powerful",
+        "5. Use What We Have",
+        "6. Learn and Improve",
+        "7. Every Child Deserves a Chance",
+        "8. Family and Community Help Children Grow",
+        "0. FRONT MATTER Page 6 of XX",
+        "0. FRONT MATTER Page 7 of XX",
+        "2. CHILD CARE"
+      ],
+      "indentation_levels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "unicode_brackets": {
+      "bracket_usage": {
+        "˹": {
+          "count": 123,
+          "description": "LEFT TORTOISE SHELL BRACKET (U+02F9)"
+        },
+        "˺": {
+          "count": 124,
+          "description": "RIGHT TORTOISE SHELL BRACKET (U+02FA)"
+        }
+      },
+      "examples": {
+        "˹": [
+          "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "[0.2.1 EL ˹Vision˺",
+          "[0.2.2 EL ˹Daycares Mission˺",
+          "[0.2.3.1 ˹Excellence in childcare˺:"
+        ],
+        "˺": [
+          "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+          "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+          "[0.2.1 EL ˹Vision˺",
+          "[0.2.2 EL ˹Daycares Mission˺",
+          "[0.2.3.1 ˹Excellence in childcare˺:"
+        ]
+      }
+    },
+    "spacing_patterns": {
+      "consecutive_blank_lines": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "paragraph_spacing": [],
+      "section_spacing": []
+    },
+    "detected_headings": [
+      {
+        "text": "0. FRONT MATTER Page 2 of XX",
+        "line_number": 0,
+        "page_number": 2,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "CHAPTER 0. FRONT MATTER",
+        "line_number": 1,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "CHAPTER 0. FRONT MATTER",
+        "line_number": 2,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0.1 INTRODUCTION",
+        "line_number": 3,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+        "line_number": 4,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+        "line_number": 5,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+        "line_number": 14,
+        "page_number": 2,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0. FRONT MATTER Page 3 of XX",
+        "line_number": 0,
+        "page_number": 3,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "0.1 INTRODUCTION",
+        "line_number": 1,
+        "page_number": 3,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "[0.2 “˹NOT A CONTRACT˺” ˹DISCLAIMER˺",
+        "line_number": 12,
+        "page_number": 3,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0. FRONT MATTER Page 4 of XX",
+        "line_number": 0,
+        "page_number": 4,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "[0.2 ˹VISION˺ - ˹MISSION˺ - ˹VALUES˺]",
+        "line_number": 1,
+        "page_number": 4,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0. FRONT MATTER Page 5 of XX",
+        "line_number": 0,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "1. The Child\\",
+        "line_number": 8,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "1."
+      },
+      {
+        "text": "2. Comes First",
+        "line_number": 9,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "3. Caregivers Matter",
+        "line_number": 11,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "3."
+      },
+      {
+        "text": "4. Play is Powerful",
+        "line_number": 13,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "4."
+      },
+      {
+        "text": "5. Use What We Have",
+        "line_number": 15,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "5."
+      },
+      {
+        "text": "6. Learn and Improve",
+        "line_number": 17,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "6."
+      },
+      {
+        "text": "7. Every Child Deserves a Chance",
+        "line_number": 19,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "7."
+      },
+      {
+        "text": "8. Family and Community Help Children Grow",
+        "line_number": 21,
+        "page_number": 5,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "8."
+      },
+      {
+        "text": "??ADJUST CORE VALUES TO SIMPLIFY, AND ALSO ADD IN ASPECTS FOR OUR ADULT TEAMS, TO",
+        "line_number": 23,
+        "page_number": 5,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "CONNECT WITH THE “PROVERBS TO GUIDE US” FOR INSTANCE…",
+        "line_number": 24,
+        "page_number": 5,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0. FRONT MATTER Page 6 of XX",
+        "line_number": 0,
+        "page_number": 6,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "0.3 PROVERBS TO GUIDE US",
+        "line_number": 1,
+        "page_number": 6,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "0. FRONT MATTER Page 7 of XX",
+        "line_number": 0,
+        "page_number": 7,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "0."
+      },
+      {
+        "text": "0.3 A NOTE TO DAYCARE MANAGERS AND CAREGIVERS",
+        "line_number": 1,
+        "page_number": 7,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2. CHILD CARE",
+        "line_number": 0,
+        "page_number": 8,
+        "type": "all_caps",
+        "confidence": 0.8
+      }
+    ]
+  },
+  "chapter_2": {
+    "chapter_name": "Chapter 2",
+    "page_count": 22,
+    "heading_patterns": {
+      "all_caps": [
+        {
+          "text": "CHAPTER 2 : CHILD CARE",
+          "line_num": 1
+        },
+        {
+          "text": "CHAPTER 2 : CHILD CARE",
+          "line_num": 2
+        },
+        {
+          "text": "2.1 DIAPER CHANGING",
+          "line_num": 3
+        },
+        {
+          "text": "2.2 TOILETING",
+          "line_num": 12
+        },
+        {
+          "text": "2.3 HANDWASHING",
+          "line_num": 22
+        },
+        {
+          "text": "2.1 DIAPER CHANGING",
+          "line_num": 65
+        },
+        {
+          "text": "2.2 TOILETING",
+          "line_num": 138
+        },
+        {
+          "text": "2.3 HANDWASHING",
+          "line_num": 251
+        },
+        {
+          "text": "3. SAFETY AND HYGIENE",
+          "line_num": 547
+        }
+      ],
+      "numbered": [
+        {
+          "text": "2. CHILD CARE Page 1 of XX",
+          "line_num": 0
+        },
+        {
+          "text": "2.1 DIAPER CHANGING",
+          "line_num": 3
+        },
+        {
+          "text": "2.1.1 Timing and Records",
+          "line_num": 4
+        },
+        {
+          "text": "2.1.2 Location",
+          "line_num": 5
+        },
+        {
+          "text": "2.1.3 Preliminary Checks",
+          "line_num": 6
+        },
+        {
+          "text": "2.1.3.1 Importance of Quality Diaper Changes",
+          "line_num": 7
+        },
+        {
+          "text": "2.1.3.2 Before engaging in the diaper changing activity",
+          "line_num": 8
+        },
+        {
+          "text": "2.1.3.3 During the diaper change",
+          "line_num": 9
+        },
+        {
+          "text": "2.1.3.4 Diaper changing is fun!",
+          "line_num": 10
+        },
+        {
+          "text": "2.1.3.5 After the diaper change",
+          "line_num": 11
+        },
+        {
+          "text": "2.2 TOILETING",
+          "line_num": 12
+        },
+        {
+          "text": "2.2.1 Importance of Toileting",
+          "line_num": 13
+        },
+        {
+          "text": "2.2.2 Asking non-diapered children if they need to use the potty",
+          "line_num": 14
+        },
+        {
+          "text": "2.2.3 Using the potty",
+          "line_num": 15
+        },
+        {
+          "text": "2.2.4 Potty Training Guidelines",
+          "line_num": 16
+        },
+        {
+          "text": "2.2.4.1 Don’t underestimate the challenge of potty training",
+          "line_num": 17
+        },
+        {
+          "text": "2.2.4.2 Before beginning the potty training process",
+          "line_num": 18
+        },
+        {
+          "text": "2.2.4.3 Step-by-step guide",
+          "line_num": 19
+        },
+        {
+          "text": "2.2.5 Emptying and cleaning potties and toilets",
+          "line_num": 20
+        },
+        {
+          "text": "2.2.6 Inventory, preparing, and storing the potty-cleaning tools",
+          "line_num": 21
+        },
+        {
+          "text": "2.3 HANDWASHING",
+          "line_num": 22
+        },
+        {
+          "text": "2.3.1 Strategy and frequency",
+          "line_num": 23
+        },
+        {
+          "text": "2.3.2 How to wash hands",
+          "line_num": 24
+        },
+        {
+          "text": "2.3.3 Group handwashing",
+          "line_num": 25
+        },
+        {
+          "text": "2.3.4 Handwashing furnishings",
+          "line_num": 26
+        },
+        {
+          "text": "2.4 Meals",
+          "line_num": 27
+        },
+        {
+          "text": "2.4.1 Meals strategy and overview",
+          "line_num": 28
+        },
+        {
+          "text": "2.4.1.1 Meals served in the daycare:",
+          "line_num": 29
+        },
+        {
+          "text": "2.4.1.2 Communication",
+          "line_num": 30
+        },
+        {
+          "text": "2.4.1.3 Daycare-furnished meals:",
+          "line_num": 31
+        },
+        {
+          "text": "2.4.1.4 Training",
+          "line_num": 32
+        },
+        {
+          "text": "2.4.2 Meal Preparation",
+          "line_num": 33
+        },
+        {
+          "text": "2.4.2.1 Allergies",
+          "line_num": 34
+        },
+        {
+          "text": "2.4.2.2 Checking food supplied by parents",
+          "line_num": 35
+        },
+        {
+          "text": "2.4.2.3 Kitchen hygiene and food safety",
+          "line_num": 36
+        },
+        {
+          "text": "2.4.2.3.1 Preventing food contamination",
+          "line_num": 37
+        },
+        {
+          "text": "2.4.2.4 Kitchen cleanliness",
+          "line_num": 38
+        },
+        {
+          "text": "2.4.2.5 Utensils and serving of meals",
+          "line_num": 39
+        },
+        {
+          "text": "2.4.2.5.1 Labeling utensils",
+          "line_num": 40
+        },
+        {
+          "text": "2.4.2.6 Encouraging good manners during meals",
+          "line_num": 41
+        },
+        {
+          "text": "2.4.2.7 Enrichment activities before and during meals",
+          "line_num": 42
+        },
+        {
+          "text": "2. CHILD CARE Page 2 of XX",
+          "line_num": 45
+        },
+        {
+          "text": "2.4.2.7.1 Here are tips for storytelling.",
+          "line_num": 46
+        },
+        {
+          "text": "2.4.2.8 “Menu” card game.",
+          "line_num": 47
+        },
+        {
+          "text": "2.4.2.9 Responsive Feeding",
+          "line_num": 48
+        },
+        {
+          "text": "2.5 After meal",
+          "line_num": 49
+        },
+        {
+          "text": "2.5.1 Individual child’s hygiene",
+          "line_num": 50
+        },
+        {
+          "text": "2.5.2 Child’s special meal items",
+          "line_num": 51
+        },
+        {
+          "text": "2.5.3 Carpets, Potties, Dishes, floors.",
+          "line_num": 52
+        },
+        {
+          "text": "2.6.1 Safety & hygiene is a task for all staff",
+          "line_num": 54
+        },
+        {
+          "text": "2.6.2 Transporting children from one daycare to the other",
+          "line_num": 55
+        },
+        {
+          "text": "2.6.2.1 Human transport",
+          "line_num": 56
+        },
+        {
+          "text": "2.6.2.2 Motorcycle",
+          "line_num": 57
+        },
+        {
+          "text": "2.6.2.3 Car",
+          "line_num": 58
+        },
+        {
+          "text": "2.7 Discussion on different daycare staff-children ratio",
+          "line_num": 59
+        },
+        {
+          "text": "2.7.1 Ratio of 1:5",
+          "line_num": 60
+        },
+        {
+          "text": "2.7.2 Ratio of (2:5)",
+          "line_num": 61
+        },
+        {
+          "text": "2. CHILD CARE Page 3 of XX",
+          "line_num": 64
+        },
+        {
+          "text": "2.1 DIAPER CHANGING",
+          "line_num": 65
+        },
+        {
+          "text": "2.1.1 Timing and Records",
+          "line_num": 66
+        },
+        {
+          "text": "2.1.2 Location",
+          "line_num": 71
+        },
+        {
+          "text": "2.1.3 Preliminary Checks",
+          "line_num": 76
+        },
+        {
+          "text": "2.1.3.1 Importance of Quality Diaper Changes",
+          "line_num": 77
+        },
+        {
+          "text": "2.1.3.2 Before engaging in the diaper changing activity",
+          "line_num": 82
+        },
+        {
+          "text": "2. CHILD CARE Page 4 of XX",
+          "line_num": 92
+        },
+        {
+          "text": "2.1.3.3 During the diaper change",
+          "line_num": 108
+        },
+        {
+          "text": "2.1.3.4 Diaper changing is fun!",
+          "line_num": 116
+        },
+        {
+          "text": "2. CHILD CARE Page 5 of XX",
+          "line_num": 120
+        },
+        {
+          "text": "2.1.3.5 After the diaper change",
+          "line_num": 126
+        },
+        {
+          "text": "2.2 TOILETING",
+          "line_num": 138
+        },
+        {
+          "text": "2.2.1 Importance of Toileting",
+          "line_num": 139
+        },
+        {
+          "text": "2.2.2 Asking non-diapered children if they need to use the potty",
+          "line_num": 144
+        },
+        {
+          "text": "2. CHILD CARE Page 6 of XX",
+          "line_num": 148
+        },
+        {
+          "text": "2.2.3 Using the potty",
+          "line_num": 153
+        },
+        {
+          "text": "2.2.4 Potty Training Guidelines",
+          "line_num": 168
+        },
+        {
+          "text": "2. CHILD CARE Page 7 of XX",
+          "line_num": 171
+        },
+        {
+          "text": "2.2.4.1 Don’t underestimate the challenge of potty training",
+          "line_num": 172
+        },
+        {
+          "text": "2.2.4.2 Before beginning the potty training process",
+          "line_num": 175
+        },
+        {
+          "text": "2.2.4.3 Step-by-step guide",
+          "line_num": 184
+        },
+        {
+          "text": "2. CHILD CARE Page 8 of XX",
+          "line_num": 197
+        },
+        {
+          "text": "2. CHILD CARE Page 9 of XX",
+          "line_num": 222
+        },
+        {
+          "text": "2.2.5 Emptying and cleaning potties and toilets",
+          "line_num": 223
+        },
+        {
+          "text": "2.2.6 Inventory, preparing, and storing the potty-cleaning tools",
+          "line_num": 244
+        },
+        {
+          "text": "2. CHILD CARE Page 10 of XX",
+          "line_num": 248
+        },
+        {
+          "text": "2.3 HANDWASHING",
+          "line_num": 251
+        },
+        {
+          "text": "2.3.1 Strategy and frequency",
+          "line_num": 252
+        },
+        {
+          "text": "2.3.2 How to wash hands",
+          "line_num": 259
+        },
+        {
+          "text": "2.3.3 Group handwashing",
+          "line_num": 266
+        },
+        {
+          "text": "2.3.4 Handwashing furnishings",
+          "line_num": 270
+        },
+        {
+          "text": "2. CHILD CARE Page 11 of XX",
+          "line_num": 274
+        },
+        {
+          "text": "2.4 Meals",
+          "line_num": 280
+        },
+        {
+          "text": "2.4.1 Meals strategy and overview",
+          "line_num": 281
+        },
+        {
+          "text": "2.4.1.1 Meals served in the daycare:",
+          "line_num": 282
+        },
+        {
+          "text": "2.4.1.2 Communication",
+          "line_num": 286
+        },
+        {
+          "text": "2.4.1.3 Daycare-furnished meals:",
+          "line_num": 292
+        },
+        {
+          "text": "2. CHILD CARE Page 12 of XX",
+          "line_num": 300
+        },
+        {
+          "text": "2.4.1.4 Training",
+          "line_num": 301
+        },
+        {
+          "text": "2.4.2 Meal Preparation",
+          "line_num": 304
+        },
+        {
+          "text": "2.4.2.1 Allergies",
+          "line_num": 305
+        },
+        {
+          "text": "2.4.2.2 Checking food supplied by parents",
+          "line_num": 315
+        },
+        {
+          "text": "2. CHILD CARE Page 13 of XX",
+          "line_num": 326
+        },
+        {
+          "text": "2.4.2.3 Kitchen hygiene and food safety",
+          "line_num": 335
+        },
+        {
+          "text": "2.4.2.3.1 Preventing food contamination",
+          "line_num": 336
+        },
+        {
+          "text": "2. CHILD CARE Page 14 of XX",
+          "line_num": 352
+        },
+        {
+          "text": "2.4.2.4 Kitchen cleanliness",
+          "line_num": 355
+        },
+        {
+          "text": "2.4.2.5 Utensils and serving of meals",
+          "line_num": 362
+        },
+        {
+          "text": "2.4.2.5.1 Labeling utensils",
+          "line_num": 363
+        },
+        {
+          "text": "2. CHILD CARE Page 15 of XX",
+          "line_num": 378
+        },
+        {
+          "text": "2.4.2.6 Encouraging good manners during meals",
+          "line_num": 381
+        },
+        {
+          "text": "2.4.2.7 Enrichment activities before and during meals",
+          "line_num": 392
+        },
+        {
+          "text": "2.4.2.7.1 Here are storytelling tips.",
+          "line_num": 395
+        },
+        {
+          "text": "2. CHILD CARE Page 16 of XX",
+          "line_num": 405
+        },
+        {
+          "text": "2.4.2.8 “Menu” card game.",
+          "line_num": 419
+        },
+        {
+          "text": "2.4.2.9 Responsive Feeding",
+          "line_num": 423
+        },
+        {
+          "text": "2. CHILD CARE Page 17 of XX",
+          "line_num": 432
+        },
+        {
+          "text": "2.5 After meal",
+          "line_num": 443
+        },
+        {
+          "text": "2.5.1 Individual child’s hygiene",
+          "line_num": 444
+        },
+        {
+          "text": "2.5.2 Child’s special meal items",
+          "line_num": 449
+        },
+        {
+          "text": "2.5.3 Carpets, Potties, Dishes, floors.",
+          "line_num": 453
+        },
+        {
+          "text": "2. CHILD CARE Page 18 of XX",
+          "line_num": 457
+        },
+        {
+          "text": "2.6 Watching children",
+          "line_num": 458
+        },
+        {
+          "text": "2.6.1 Safety & hygiene is a task for all staff",
+          "line_num": 462
+        },
+        {
+          "text": "2. CHILD CARE Page 19 of XX",
+          "line_num": 483
+        },
+        {
+          "text": "2.6.2 Transporting children from one daycare to the other",
+          "line_num": 491
+        },
+        {
+          "text": "2.6.2.1 Human transport",
+          "line_num": 492
+        },
+        {
+          "text": "2.6.2.2 Motorcycle",
+          "line_num": 505
+        },
+        {
+          "text": "2. CHILD CARE Page 20 of XX",
+          "line_num": 509
+        },
+        {
+          "text": "2.6.2.3 Car",
+          "line_num": 511
+        },
+        {
+          "text": "2.7 Discussion on different daycare staff-children ratio",
+          "line_num": 512
+        },
+        {
+          "text": "2.7.1 Comparing daycare caregivers: children ratios",
+          "line_num": 513
+        },
+        {
+          "text": "2.7.2 Ratio of (2:5)",
+          "line_num": 532
+        },
+        {
+          "text": "2. CHILD CARE Page 21 of XX",
+          "line_num": 536
+        },
+        {
+          "text": "3. SAFETY AND HYGIENE",
+          "line_num": 547
+        }
+      ],
+      "bracketed": [],
+      "short_lines": [
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 43
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 62
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 90
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 118
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 146
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 169
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 195
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 220
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 246
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 272
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 298
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 324
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 350
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 376
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 403
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 430
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 455
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 481
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 507
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 534
+        },
+        {
+          "text": "EL_CgManual_CURRENT_v016 November 5, 2025",
+          "line_num": 545
+        },
+        {
+          "text": "3. SAFETY AND HYGIENE",
+          "line_num": 547
+        }
+      ]
+    },
+    "list_patterns": {
+      "bullet_markers": {
+        "●": 169
+      },
+      "numbered_lists": [
+        "2. CHILD CARE Page 1 of XX",
+        "2. CHILD CARE Page 2 of XX",
+        "2. CHILD CARE Page 3 of XX",
+        "2. CHILD CARE Page 4 of XX",
+        "2. CHILD CARE Page 5 of XX",
+        "2. CHILD CARE Page 6 of XX",
+        "2. CHILD CARE Page 7 of XX",
+        "2. CHILD CARE Page 8 of XX",
+        "2. CHILD CARE Page 9 of XX",
+        "2. CHILD CARE Page 10 of XX",
+        "2. CHILD CARE Page 11 of XX",
+        "2. CHILD CARE Page 12 of XX",
+        "2. CHILD CARE Page 13 of XX",
+        "2. CHILD CARE Page 14 of XX",
+        "2. CHILD CARE Page 15 of XX",
+        "2. CHILD CARE Page 16 of XX",
+        "2. CHILD CARE Page 17 of XX",
+        "2. CHILD CARE Page 18 of XX",
+        "2. CHILD CARE Page 19 of XX",
+        "2. CHILD CARE Page 20 of XX",
+        "2. CHILD CARE Page 21 of XX",
+        "3. SAFETY AND HYGIENE"
+      ],
+      "indentation_levels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "unicode_brackets": {
+      "bracket_usage": {},
+      "examples": {}
+    },
+    "spacing_patterns": {
+      "consecutive_blank_lines": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "paragraph_spacing": [],
+      "section_spacing": []
+    },
+    "detected_headings": [
+      {
+        "text": "2. CHILD CARE Page 1 of XX",
+        "line_number": 0,
+        "page_number": 9,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "CHAPTER 2 : CHILD CARE",
+        "line_number": 1,
+        "page_number": 9,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "CHAPTER 2 : CHILD CARE",
+        "line_number": 2,
+        "page_number": 9,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2.1 DIAPER CHANGING",
+        "line_number": 3,
+        "page_number": 9,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2.2 TOILETING",
+        "line_number": 12,
+        "page_number": 9,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2.3 HANDWASHING",
+        "line_number": 22,
+        "page_number": 9,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2. CHILD CARE Page 2 of XX",
+        "line_number": 0,
+        "page_number": 10,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 3 of XX",
+        "line_number": 0,
+        "page_number": 11,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2.1 DIAPER CHANGING",
+        "line_number": 1,
+        "page_number": 11,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2. CHILD CARE Page 4 of XX",
+        "line_number": 0,
+        "page_number": 12,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 5 of XX",
+        "line_number": 0,
+        "page_number": 13,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2.2 TOILETING",
+        "line_number": 18,
+        "page_number": 13,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2. CHILD CARE Page 6 of XX",
+        "line_number": 0,
+        "page_number": 14,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 7 of XX",
+        "line_number": 0,
+        "page_number": 15,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 8 of XX",
+        "line_number": 0,
+        "page_number": 16,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 9 of XX",
+        "line_number": 0,
+        "page_number": 17,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 10 of XX",
+        "line_number": 0,
+        "page_number": 18,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2.3 HANDWASHING",
+        "line_number": 3,
+        "page_number": 18,
+        "type": "all_caps",
+        "confidence": 0.8
+      },
+      {
+        "text": "2. CHILD CARE Page 11 of XX",
+        "line_number": 0,
+        "page_number": 19,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 12 of XX",
+        "line_number": 0,
+        "page_number": 20,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 13 of XX",
+        "line_number": 0,
+        "page_number": 21,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 14 of XX",
+        "line_number": 0,
+        "page_number": 22,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 15 of XX",
+        "line_number": 0,
+        "page_number": 23,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 16 of XX",
+        "line_number": 0,
+        "page_number": 24,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 17 of XX",
+        "line_number": 0,
+        "page_number": 25,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 18 of XX",
+        "line_number": 0,
+        "page_number": 26,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 19 of XX",
+        "line_number": 0,
+        "page_number": 27,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 20 of XX",
+        "line_number": 0,
+        "page_number": 28,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "2. CHILD CARE Page 21 of XX",
+        "line_number": 0,
+        "page_number": 29,
+        "type": "numbered",
+        "confidence": 0.9,
+        "number": "2."
+      },
+      {
+        "text": "3. SAFETY AND HYGIENE",
+        "line_number": 0,
+        "page_number": 30,
+        "type": "all_caps",
+        "confidence": 0.8
+      }
+    ]
+  }
+}
