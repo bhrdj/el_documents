@@ -227,8 +227,8 @@ def detect_list_type(text: str) -> Optional[str]:
     """
     text = text.strip()
 
-    # Check for bullet list markers
-    if re.match(r'^[•\-\*]\s+', text):
+    # Check for bullet list markers (including unicode bullets from PDF)
+    if re.match(r'^[●○•\-\*]\s+', text):
         return 'bullet'
 
     # Check for numbered list markers
@@ -236,3 +236,19 @@ def detect_list_type(text: str) -> Optional[str]:
         return 'numbered'
 
     return None
+
+
+def convert_bullet_to_markdown(text: str) -> str:
+    """
+    Convert unicode bullet characters to standard markdown bullets.
+
+    Args:
+        text: Text that may contain unicode bullets
+
+    Returns:
+        Text with standard markdown bullets
+    """
+    # Replace common unicode bullets with markdown hyphen
+    text = re.sub(r'^(\s*)[●○•]\s+', r'\1- ', text, flags=re.MULTILINE)
+
+    return text

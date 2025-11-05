@@ -12,6 +12,14 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 ## 1. Heading Structure
 
+**CRITICAL RULE**: Heading level (number of `#` marks) must correspond to numbering depth:
+- H1 (`#`) = Single number (e.g., `2`)
+- H2 (`##`) = Two numbers (e.g., `2.1`)
+- H3 (`###`) = Three numbers (e.g., `2.1.1`)
+- H4 (`####`) = Four numbers (e.g., `2.1.1.1`)
+- H5 (`#####`) = Five numbers (e.g., `2.1.1.1.1`)
+- H6 (`######`) = Six numbers (e.g., `2.1.1.1.1.1`)
+
 ### 1.1 Primary Chapter Headings (H1)
 
 **Pattern**: `# CHAPTER X: TITLE` or `# X. TITLE`
@@ -22,9 +30,11 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 **Formatting Rules**:
 - Use single `#` for H1 headings
-- Chapter number followed by period or "CHAPTER" prefix
+- Single number only (bare chapter number)
 - Title in TITLE CASE or ALL CAPS (preserve source formatting)
 - Single blank line before and after
+
+**Numbering**: `X` (single number)
 
 ### 1.2 Section Headings (H2)
 
@@ -36,9 +46,11 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 **Formatting Rules**:
 - Use `##` for H2 headings
-- Numbered with chapter.section format
+- Two-level numbering: chapter.section
 - Title typically in ALL CAPS
 - Single blank line before and after
+
+**Numbering**: `X.Y` (two numbers)
 
 ### 1.3 Subsection Headings (H3)
 
@@ -46,15 +58,37 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 **Examples**:
 - `### 2.1.1 Timing and Records`
-- `### 2.4.2.3.1 Preventing food contamination`
+- `### 2.4.2 Meal Preparation`
 
 **Formatting Rules**:
 - Use `###` for H3 headings
-- Numbered with full hierarchy (can extend to 4-5 levels)
+- Three-level numbering: chapter.section.subsection
 - Title in Title Case or Sentence case
 - Single blank line before and after
 
-### 1.4 Bracketed Headings (Chapter 0 Style)
+**Numbering**: `X.Y.Z` (three numbers)
+
+### 1.4 Deep Subsection Headings (H4, H5, H6)
+
+**Pattern**: `#### X.Y.Z.W Title` and deeper
+
+**Examples**:
+- `#### 2.4.2.3 Kitchen hygiene and food safety` (H4 with 4 numbers)
+- `##### 2.4.2.3.1 Preventing food contamination` (H5 with 5 numbers)
+- `###### 2.4.2.5.1 Labeling utensils` (H6 with 6 numbers)
+
+**Formatting Rules**:
+- Use `####`, `#####`, or `######` for deeper levels
+- Numbering depth must match heading level (4, 5, or 6 numbers)
+- Title in Title Case or Sentence case
+- Single blank line before and after
+
+**Numbering**:
+- H4: `X.Y.Z.W` (four numbers)
+- H5: `X.Y.Z.W.V` (five numbers)
+- H6: `X.Y.Z.W.V.U` (six numbers)
+
+### 1.5 Bracketed Headings (Chapter 0 Style)
 
 **Pattern**: `### [X.Y.Z Title]` or `[X.Y.Z ˹Title with brackets˺]`
 
@@ -77,17 +111,9 @@ This document defines the formatting template for reformatting the EL Caregiver 
 
 ### 2.1 Bullet Lists
 
-**Marker**: Use `●` (U+25CF BLACK CIRCLE) or `-` for bullets
+**Marker**: Use standard markdown `-` for all bullets
 
-**Examples**:
-```markdown
-● First item
-● Second item
-● Third item
-```
-
-Or:
-
+**Example**:
 ```markdown
 - First item
 - Second item
@@ -95,7 +121,7 @@ Or:
 ```
 
 **Formatting Rules**:
-- Use bullet character from source (typically `●` in this manual)
+- Use `-` (hyphen) for all bullet points
 - Single space after marker
 - Wrap long items naturally
 - Single blank line before and after list block
@@ -107,16 +133,16 @@ Or:
 
 **Example**:
 ```markdown
-● Parent item
-  ○ Nested item
-  ○ Another nested item
-● Another parent item
+- Parent item
+  - Nested item
+  - Another nested item
+- Another parent item
 ```
 
 **Formatting Rules**:
-- Use `○` (U+25CB WHITE CIRCLE) or indented `-` for nested bullets
+- Use `-` for all levels (nested bullets also use `-`)
 - 2 spaces for each indentation level
-- Consistent marker within same level
+- Consistent indentation throughout
 
 ### 2.3 Numbered Lists
 
@@ -137,39 +163,20 @@ Or:
 
 ---
 
-## 3. Unicode Bracket Preservation
+## 3. Unicode Bracket Preservation (Chapter 0 Only)
 
-### 3.1 Unicode Bracket Characters
+**Characters**: `˹˺` (tortoise shell brackets) and `[]` (square brackets)
 
-**Characters Used**:
-- `˹` (U+02F9) - LEFT TORTOISE SHELL BRACKET
-- `˺` (U+02FA) - RIGHT TORTOISE SHELL BRACKET
+**Purpose**: Mark key terms in Chapter 0 for future Anki-style exam question generation (out of scope for current project)
 
-**Usage Pattern**: These brackets surround emphasized or key terms throughout the manual, especially in Chapter 0.
+**Scope**: Chapter 0 only
 
-**Examples**:
-- `˹Guide˺ day-to-day daycare ˹operations˺`
-- `˹Neither˺ the ˹provisions˺ of this document`
-- `˹Excellence in childcare˺:`
-- `˹NOT A CONTRACT˺`
+**Rules**:
+- Preserve exactly as-is in Chapter 0 (placement, spacing, encoding)
+- If found in other chapters: preserve but flag for manual review
+- Do not convert to ASCII equivalents
 
-### 3.2 Preservation Rules (CRITICAL)
-
-1. **NEVER remove or modify unicode brackets**
-2. **ALWAYS preserve exact placement around terms**
-3. **Maintain UTF-8 encoding throughout processing**
-4. **Do not replace with ASCII equivalents** (e.g., don't convert to `[` or `{`)
-5. **Preserve spacing** - no space between bracket and enclosed text
-
-### 3.3 Formatting Context
-
-Unicode brackets appear in:
-- Headings (especially Chapter 0)
-- List items
-- Inline text emphasizing key concepts
-- Section titles
-
-**Important**: These are not markdown formatting - they are content that must be preserved literally.
+**Examples**: `˹Guide˺ day-to-day ˹operations˺` or `[0.2 "˹NOT A CONTRACT˺" ˹DISCLAIMER˺]`
 
 ---
 
@@ -280,37 +287,31 @@ Unicode brackets appear in:
 ### 7.1 Chapter 0 (Front Matter)
 
 **Characteristics**:
-- Heavy use of unicode brackets
-- Bracketed section headings
-- Mix of formal and informal headings
+- Bracketed headings using `[]` and `˹˺` (see Section 3)
 - Mission/vision statement blocks
-- Bullet lists with emphasized terms
+- Mix of ALL CAPS and Title Case headings
 
 **Special Handling**:
-- Preserve ALL brackets meticulously
-- Maintain bracketed heading format
-- Keep vision/mission block structure
+- Preserve all brackets (see Section 3)
+- Maintain vision/mission block structure
 
 ### 7.2 Chapter 2 (Child Care)
 
 **Characteristics**:
-- Deep heading hierarchy (up to 5 levels deep: 2.4.2.3.1)
+- Deep heading hierarchy (up to 5 levels: 2.4.2.3.1)
 - Extensive bullet lists
 - Detailed procedural content
-- NO unicode brackets (Chapter 2 doesn't use them)
 
 **Special Handling**:
-- Careful heading level mapping (may need up to H6 for 5-level nesting)
+- Map heading depth to correct markdown level (may need H4-H6)
 - Maintain list structure and indentation
-- Preserve procedural step order
 
-### 7.3 Expected Patterns in Other Chapters
+### 7.3 Other Chapters (Expected Patterns)
 
-Based on Chapter 2 pattern, most chapters likely:
-- Use numbered section hierarchies
-- Contain extensive bullet lists
-- Have procedural/instructional content
-- May or may not use unicode brackets
+Based on Chapter 2 analysis:
+- Numbered section hierarchies
+- Extensive bullet lists
+- Procedural/instructional content
 
 ---
 
@@ -379,14 +380,14 @@ months are checked more frequently.
 
 **Markdown Output**:
 ```markdown
-● Diapered children are checked at least hourly for the need of diaper change. Children under 12 months are checked more frequently.
-● After every diaper change, a mark should be put on the Diaper data collection Sheet.
+- Diapered children are checked at least hourly for the need of diaper change. Children under 12 months are checked more frequently.
+- After every diaper change, a mark should be put on the Diaper data collection Sheet.
 ```
 
 **Changes**:
 - Joined wrapped lines into single lines
-- Maintained bullet marker
-- Preserved exact text
+- Converted unicode bullet `●` to markdown bullet `-`
+- Preserved exact text content
 
 ### 9.3 Unicode Bracket Transformation
 
@@ -401,12 +402,13 @@ months are checked more frequently.
 ```markdown
 [Managers, caregivers, and other staff are urged to study the manual to:
 
-● ˹Guide˺ day-to-day daycare ˹operations˺
-● Ensure ˹EL standards˺ are ˹met˺ in every EL daycare]
+- ˹Guide˺ day-to-day daycare ˹operations˺
+- Ensure ˹EL standards˺ are ˹met˺ in every EL daycare]
 ```
 
 **Changes**:
 - Added blank line after intro sentence (before list)
+- Converted unicode bullets `●` to markdown bullets `-`
 - **PRESERVED unicode brackets exactly**
 - Maintained bracket context around list block
 
