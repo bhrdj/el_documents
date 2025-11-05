@@ -4,21 +4,26 @@ Scripts for extracting and reformatting the EL Caregiver Manual from PDF to vani
 
 ## Current Status
 
-**Phase Completed**: PDF Extraction (Phase 1)
+**Completed Phases**:
 
-- Chapter boundary detection implemented and tested
-- All 10 chapters successfully extracted from `EL_CgManual_CURRENT_v016.pdf`
-- Raw extractions stored in pipeline structure for multi-phase processing
-- Batch extraction script created for reproducibility
-- Chapter 8 split into separate chapters (8: Stories, 9: Relocations/Additions)
+1. ✅ **PDF Extraction (Phase 1)**: All 10 chapters extracted from PDF
+2. ✅ **Unicode Bullet Conversion (Phase 2)**: All chapters reformatted with hierarchical markdown bullets
+3. ✅ **Validation (Phase 3)**: All chapters validated for format and content fidelity
 
-**Next Phase**: Basic Reformatting (Phase 2) - Apply formatting guide rules
+**Results**:
+- 10 chapters successfully reformatted to vanilla markdown
+- 1,447 headings formatted correctly across all chapters
+- 4,140 list items converted from unicode bullets to markdown
+- 164 unicode bracket pairs preserved (primarily in chapters 0 and 1)
+- All chapters passed validation with zero errors
+
+**Next Steps**: Editorial review and content improvements (future feature)
 
 ## Pipeline Structure
 
 ```
 output/chapters/
-├── 00_raw/           # Raw PDF extractions (current)
+├── 00_raw/              # Raw PDF extractions
 │   ├── chapter_0.md
 │   ├── chapter_1.md
 │   ├── chapter_2.md
@@ -29,7 +34,19 @@ output/chapters/
 │   ├── chapter_7.md
 │   ├── chapter_8.md
 │   └── chapter_9.md
-└── 01_basicreformat/ # Formatted chapters (planned)
+├── 01_basicreformat/    # (Skipped - not used in pipeline)
+└── 02_removedbullets/   # Reformatted chapters with markdown bullets
+    ├── chapter_00.md
+    ├── chapter_01.md
+    ├── chapter_02.md
+    ├── chapter_03.md
+    ├── chapter_04.md
+    ├── chapter_05_part1.md
+    ├── chapter_05_part2.md
+    ├── chapter_07.md
+    ├── chapter_08.md
+    ├── chapter_09.md
+    └── VALIDATION_REPORT.md
 ```
 
 ## Scripts
@@ -87,6 +104,55 @@ Batch extraction script that processes all chapters based on detected boundaries
 - Handles duplicate Chapter 5 as part1 and part2
 - Reports progress for each chapter
 
+### reformat_chapter.py
+
+Reformat raw chapters to apply formatting template and convert unicode bullets to markdown.
+
+**Usage**:
+```bash
+# Reformat a single chapter
+.venv/bin/python scripts/reformat_manual/reformat_chapter.py 0
+.venv/bin/python scripts/reformat_manual/reformat_chapter.py 2
+
+# Specify output stage (default: 02_removedbullets)
+.venv/bin/python scripts/reformat_manual/reformat_chapter.py 5 03_nextstage
+```
+
+**Transformations**:
+1. Remove page markers and footers
+2. Remove duplicate chapter headings
+3. Convert unicode bullets (●○■) to hierarchical markdown bullets (-, 2-space indent, 4-space indent)
+4. Normalize heading format with proper markdown levels
+5. Clean list spacing (single blank lines before/after lists)
+6. Apply general spacing rules
+
+**Input**: `output/chapters/00_raw/chapter_N.md`
+**Output**: `output/chapters/02_removedbullets/chapter_NN.md`
+
+### validate_output.py
+
+Validate reformatted chapters for quality, consistency, and vanilla markdown compliance.
+
+**Usage**:
+```bash
+# Validate all chapters
+.venv/bin/python scripts/reformat_manual/validate_output.py
+
+# Validate specific chapter
+.venv/bin/python scripts/reformat_manual/validate_output.py --chapter 02
+
+# Validate different pipeline stage
+.venv/bin/python scripts/reformat_manual/validate_output.py --stage 03_edited
+```
+
+**Validation Checks**:
+1. **Markdown validity**: No HTML tags, no extended markdown features
+2. **Heading consistency**: Proper hierarchy, no level skips (warns only)
+3. **List formatting**: Proper indentation (0, 2, 4 spaces), no unicode bullets
+4. **Unicode brackets**: Preserved where present, properly paired
+
+**Output**: Generates `VALIDATION_REPORT.md` with statistics and any errors/warnings
+
 ### utils/pdf_utils.py
 
 Core PDF extraction utilities.
@@ -100,6 +166,20 @@ Core PDF extraction utilities.
 **Chapter Detection**:
 - Standard pattern: `CHAPTER N` or `Chapter N` (where N is a number or Roman numeral)
 - Special case: `RELOCATIONS, ADDITIONS` detected as Chapter 9
+
+### utils/markdown_utils.py
+
+Markdown formatting and conversion utilities.
+
+**Key Functions**:
+- `apply_heading_format()`: Format text as markdown heading
+- `format_bullet_list()`: Format bullet lists with indentation
+- `format_numbered_list()`: Format numbered lists
+- `format_table()`: Format data as markdown table
+- `apply_spacing_rules()`: Normalize spacing throughout document
+- `convert_document_bullets()`: Convert all unicode bullets (●○■) to hierarchical markdown
+- `detect_unicode_bullets()`: Detect unicode bullet type and hierarchy level
+- `validate_unicode_brackets()`: Check unicode brackets (˹˺) are preserved
 
 ## Chapter Structure
 

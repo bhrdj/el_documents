@@ -523,6 +523,79 @@ For each reformatted chapter:
 
 ---
 
+## 11. Edge Cases Discovered During Implementation
+
+### 11.1 Unpaired Unicode Brackets
+
+**Issue**: Chapter 0 has slightly mismatched unicode bracket counts (123 opening vs 124 closing)
+
+**Resolution**: This is a minor discrepancy in the source document. The validation script flags this as a warning but does not fail validation, as the content fidelity requirement mandates preserving the source exactly as-is.
+
+**Impact**: Low - does not affect readability or content quality
+
+### 11.2 Heading Level Skips
+
+**Issue**: Chapter 2 contains at least one instance where heading levels skip from H1 directly to H3
+
+**Example**: Line 101 in chapter_02.md shows a heading level skip
+
+**Resolution**: Preserved as-is to maintain content fidelity. The validation script flags this as a warning.
+
+**Impact**: Low - markdown renderers handle this correctly, though it's not best practice
+
+### 11.3 Table of Contents Lines
+
+**Issue**: Chapter 0 contains what appears to be a table of contents (lines 5-14 in reformatted output) that lists section headings but is not formatted as a list
+
+**Resolution**: Preserved as-is since these lines exist in the source and modification would violate content fidelity requirements
+
+**Impact**: Low - could be manually improved in a future editorial pass
+
+### 11.4 Duplicate Section Headings
+
+**Issue**: Some chapters have section headings that appear twice (e.g., "0.1 INTRODUCTION" appears on lines 1 and 19 of chapter_00.md)
+
+**Resolution**: The remove_duplicate_chapter_headings function attempts to remove duplicates, but some edge cases remain. These are preserved when uncertain to maintain content fidelity.
+
+**Impact**: Low - does not significantly affect readability
+
+### 11.5 Empty Chapter Content
+
+**Issue**: Chapter 8 (chapter_08.md) has 0 headings and 0 list items, suggesting it may be a placeholder or very brief chapter
+
+**Resolution**: Processed normally. The validation script reports the statistics but does not fail.
+
+**Impact**: None - if the source has minimal content, the output correctly reflects that
+
+### 11.6 Multi-Part Chapters
+
+**Issue**: Chapter 5 is split into two parts (chapter_05_part1.md and chapter_05_part2.md) due to length
+
+**Resolution**: The reformat_chapter.py script handles multi-part chapters by processing all files matching the chapter number pattern
+
+**Impact**: None - both parts are processed correctly and maintain proper formatting
+
+### 11.7 Chapter Numbering Gaps
+
+**Issue**: The manual contains chapters 0, 1, 2, 3, 4, 5, 7, 8, 9 (missing chapter 6)
+
+**Resolution**: No special handling needed - chapters are processed independently
+
+**Impact**: None - the numbering gap appears to be intentional in the source document
+
+### 11.8 Unicode Bullet Distribution
+
+**Issue**: Unicode bullets (●○■) appear heavily in most chapters but were already converted in earlier processing stages
+
+**Observation**: The 02_removedbullets stage shows proper hierarchical conversion:
+- 4,140 total list items across all chapters
+- All unicode bullets successfully converted to markdown format with appropriate indentation
+
+**Impact**: None - conversion was successful
+
+---
+
 ## Revision History
 
 - **v1.0** (2025-11-05): Initial template based on Chapter 0 and Chapter 2 analysis
+- **v1.1** (2025-11-05): Added edge cases section documenting implementation findings

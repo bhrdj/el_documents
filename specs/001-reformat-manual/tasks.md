@@ -77,17 +77,17 @@
 
 ### Implementation for User Story 2
 
-- [ ] T018 [US2] Implement apply_heading_format function in scripts/reformat_manual/utils/markdown_utils.py
-- [ ] T019 [P] [US2] Implement format_lists function in scripts/reformat_manual/utils/markdown_utils.py
-- [ ] T020 [P] [US2] Implement format_tables function in scripts/reformat_manual/utils/markdown_utils.py
-- [ ] T021 [P] [US2] Implement apply_spacing_rules function in scripts/reformat_manual/utils/markdown_utils.py
-- [ ] T022 [US2] Create chapter reformatting script in scripts/reformat_manual/reformat_chapter.py
-- [ ] T023 [US2] Add command-line interface to reformat_chapter.py for specifying chapter number
-- [ ] T024 [US2] Test reformat_chapter.py on Chapter 0, output to output/reformatted_manual/chapter_00.md
-- [ ] T025 [US2] Validate Chapter 0 output matches source formatting and preserves all content
-- [ ] T026 [US2] Test reformat_chapter.py on Chapter 2, output to output/reformatted_manual/chapter_02.md
-- [ ] T027 [US2] Process remaining chapters systematically using reformat_chapter.py
-- [ ] T028 [US2] Verify unicode brackets preserved in all reformatted chapter outputs
+- [X] T018 [US2] Implement apply_heading_format function in scripts/reformat_manual/utils/markdown_utils.py
+- [X] T019 [P] [US2] Implement format_lists function in scripts/reformat_manual/utils/markdown_utils.py
+- [X] T020 [P] [US2] Implement format_tables function in scripts/reformat_manual/utils/markdown_utils.py
+- [X] T021 [P] [US2] Implement apply_spacing_rules function in scripts/reformat_manual/utils/markdown_utils.py
+- [X] T022 [US2] Create chapter reformatting script in scripts/reformat_manual/reformat_chapter.py
+- [X] T023 [US2] Add command-line interface to reformat_chapter.py for specifying chapter number
+- [X] T024 [US2] Test reformat_chapter.py on Chapter 0, output to output/reformatted_manual/chapter_00.md
+- [X] T025 [US2] Validate Chapter 0 output matches source formatting and preserves all content
+- [X] T026 [US2] Test reformat_chapter.py on Chapter 2, output to output/reformatted_manual/chapter_02.md
+- [X] T027 [US2] Process remaining chapters systematically using reformat_chapter.py
+- [X] T028 [US2] Verify unicode brackets preserved in all reformatted chapter outputs
 
 **Checkpoint**: At this point, all chapters should be reformatted to vanilla markdown with consistent formatting
 
@@ -101,17 +101,17 @@
 
 ### Implementation for User Story 3
 
-- [ ] T029 [P] [US3] Create validation script in scripts/reformat_manual/validate_output.py
-- [ ] T030 [P] [US3] Implement check_markdown_validity function in validate_output.py to ensure vanilla markdown
-- [ ] T031 [P] [US3] Implement check_heading_consistency function in validate_output.py
-- [ ] T032 [P] [US3] Implement check_list_formatting function in validate_output.py
-- [ ] T033 [P] [US3] Implement validate_unicode_brackets function in validate_output.py
-- [ ] T034 [US3] Run validate_output.py on all chapters in output/reformatted_manual/
-- [ ] T035 [US3] Generate validation report documenting any issues found
-- [ ] T036 [US3] Manually review each chapter against source PDF for content fidelity
-- [ ] T037 [US3] Fix any validation failures identified in validation report
-- [ ] T038 [US3] Document edge cases encountered in specs/001-reformat-manual/formatting-guide.md
-- [ ] T039 [US3] Final validation pass on complete reformatted manual
+- [X] T029 [P] [US3] Create validation script in scripts/reformat_manual/validate_output.py
+- [X] T030 [P] [US3] Implement check_markdown_validity function in validate_output.py to ensure vanilla markdown
+- [X] T031 [P] [US3] Implement check_heading_consistency function in validate_output.py
+- [X] T032 [P] [US3] Implement check_list_formatting function in validate_output.py
+- [X] T033 [P] [US3] Implement validate_unicode_brackets function in validate_output.py
+- [X] T034 [US3] Run validate_output.py on all chapters in output/reformatted_manual/
+- [X] T035 [US3] Generate validation report documenting any issues found
+- [X] T036 [US3] Manually review each chapter against source PDF for content fidelity
+- [X] T037 [US3] Fix any validation failures identified in validation report
+- [X] T038 [US3] Document edge cases encountered in specs/001-reformat-manual/formatting-guide.md
+- [X] T039 [US3] Final validation pass on complete reformatted manual
 
 **Checkpoint**: All user stories complete - manual fully reformatted with validated consistency and fidelity
 
@@ -121,10 +121,10 @@
 
 **Purpose**: Final improvements and documentation
 
-- [ ] T040 [P] Update specs/001-reformat-manual/formatting-guide.md with lessons learned
-- [ ] T041 [P] Add usage documentation to scripts/reformat_manual/README.md
-- [ ] T042 Code cleanup and refactoring of utility functions
-- [ ] T043 Add inline documentation to all Python scripts
+- [X] T040 [P] Update specs/001-reformat-manual/formatting-guide.md with lessons learned
+- [X] T041 [P] Add usage documentation to scripts/reformat_manual/README.md
+- [X] T042 Code cleanup and refactoring of utility functions
+- [X] T043 Add inline documentation to all Python scripts
 
 ---
 
