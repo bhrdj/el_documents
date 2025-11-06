@@ -172,3 +172,10 @@ pip install -r requirements.txt
 ---
 
 **Version**: 1.0.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-05
+
+## Active Technologies
+- Python 3.11 + markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx (005-document-structure-repair)
+- File-based markdown documents in `output/chapters/` with staged processing directories (005-document-structure-repair)
+
+## Recent Changes
+- 005-document-structure-repair: Added Python 3.11 + markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx
