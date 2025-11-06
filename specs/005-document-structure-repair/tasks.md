@@ -84,18 +84,18 @@ description: "Task list for document structure repair feature implementation"
 
 ### Implementation for User Story 2
 
-- [ ] T021 [US2] Create section numbering module in `scripts/lib/section_numbering.py` with stream-based numbering algorithm
-- [ ] T022 [US2] Implement counter stack management in section_numbering.py to track hierarchy levels (1-6)
-- [ ] T023 [US2] Add section number formatting logic in section_numbering.py to generate numbers like "1.2.3"
-- [ ] T024 [US2] Add header rewriting logic in section_numbering.py to update markdown headers with new numbers
-- [ ] T025 [US2] Create main repair script in `scripts/repair_section_numbering.py` with document processing loop
-- [ ] T026 [US2] Add document parsing to repair_section_numbering.py using shared Document and Section classes
-- [ ] T027 [US2] Add section detection to repair_section_numbering.py to identify all headers (# through ######)
-- [ ] T028 [US2] Add numbering application to repair_section_numbering.py by traversing document line-by-line
-- [ ] T029 [US2] Add cross-reference preservation logic to repair_section_numbering.py to maintain internal links
-- [ ] T030 [US2] Add CLI interface to repair_section_numbering.py with flags: --chapter, --input-dir, --output-dir, --dry-run, --format
-- [ ] T031 [US2] Test repair_section_numbering.py with --dry-run on chapter_01.md to verify numbering logic
-- [ ] T032 [US2] Run repair_section_numbering.py on all chapters to apply consistent numbering to output/chapters/05_repaired/
+- [X] T021 [US2] Create section numbering module in `scripts/lib/section_numbering.py` with stream-based numbering algorithm
+- [X] T022 [US2] Implement counter stack management in section_numbering.py to track hierarchy levels (1-6)
+- [X] T023 [US2] Add section number formatting logic in section_numbering.py to generate numbers like "1.2.3"
+- [X] T024 [US2] Add header rewriting logic in section_numbering.py to update markdown headers with new numbers
+- [X] T025 [US2] Create main repair script in `scripts/repair_section_numbering.py` with document processing loop
+- [X] T026 [US2] Add document parsing to repair_section_numbering.py using shared Document and Section classes
+- [X] T027 [US2] Add section detection to repair_section_numbering.py to identify all headers (# through ######)
+- [X] T028 [US2] Add numbering application to repair_section_numbering.py by traversing document line-by-line
+- [X] T029 [US2] Add cross-reference preservation logic to repair_section_numbering.py to maintain internal links
+- [X] T030 [US2] Add CLI interface to repair_section_numbering.py with flags: --chapter, --input-dir, --output-dir, --dry-run, --format
+- [X] T031 [US2] Test repair_section_numbering.py with --dry-run on chapter_01.md to verify numbering logic
+- [X] T032 [US2] Run repair_section_numbering.py on all chapters to apply consistent numbering to output/chapters/05_repaired/
 
 **Checkpoint**: At this point, all documents should have correct hierarchical section numbering
 
@@ -109,19 +109,19 @@ description: "Task list for document structure repair feature implementation"
 
 ### Implementation for User Story 3
 
-- [ ] T033 [US3] Create bullet detection module in `scripts/lib/bullet_detection.py` with functions: detect_list_blocks(), count_leading_spaces(), detect_base_indent()
-- [ ] T034 [US3] Implement GCD-based indent detection in bullet_detection.py to find base indentation unit from mixed spacing
-- [ ] T035 [US3] Add hierarchy analysis in bullet_detection.py to determine nesting levels from indentation
-- [ ] T036 [US3] Create bullet repair module in `scripts/lib/bullet_repair.py` with repair logic
-- [ ] T037 [US3] Implement standardized marker assignment in bullet_repair.py using marker sequence ['-', '*', '+', '-', '*', '+']
-- [ ] T038 [US3] Add consistent indentation application in bullet_repair.py (2 spaces per level)
-- [ ] T039 [US3] Add max depth limiting in bullet_repair.py (default: 4 levels for PDF compatibility)
-- [ ] T040 [US3] Create main repair script in `scripts/repair_bullet_hierarchy.py` with document processing loop
-- [ ] T041 [US3] Add bullet list detection to repair_bullet_hierarchy.py to identify contiguous list blocks
-- [ ] T042 [US3] Add hierarchy repair application to repair_bullet_hierarchy.py for each list block
-- [ ] T043 [US3] Add CLI interface to repair_bullet_hierarchy.py with flags: --chapter, --input-dir, --output-dir, --base-indent, --max-depth, --dry-run
-- [ ] T044 [US3] Test repair_bullet_hierarchy.py with --dry-run on chapter_01.md to verify bullet formatting
-- [ ] T045 [US3] Run repair_bullet_hierarchy.py on all chapters to fix bullet hierarchy in output/chapters/05_repaired/
+- [X] T033 [US3] Create bullet detection module in `scripts/lib/bullet_detection.py` with functions: detect_list_blocks(), count_leading_spaces(), detect_base_indent()
+- [X] T034 [US3] Implement GCD-based indent detection in bullet_detection.py to find base indentation unit from mixed spacing
+- [X] T035 [US3] Add hierarchy analysis in bullet_detection.py to determine nesting levels from indentation
+- [X] T036 [US3] Create bullet repair module in `scripts/lib/bullet_repair.py` with repair logic
+- [X] T037 [US3] Implement standardized marker assignment in bullet_repair.py using marker sequence ['-', '*', '+', '-', '*', '+']
+- [X] T038 [US3] Add consistent indentation application in bullet_repair.py (2 spaces per level)
+- [X] T039 [US3] Add max depth limiting in bullet_repair.py (default: 4 levels for PDF compatibility)
+- [X] T040 [US3] Create main repair script in `scripts/repair_bullet_hierarchy.py` with document processing loop
+- [X] T041 [US3] Add bullet list detection to repair_bullet_hierarchy.py to identify contiguous list blocks
+- [X] T042 [US3] Add hierarchy repair application to repair_bullet_hierarchy.py for each list block
+- [X] T043 [US3] Add CLI interface to repair_bullet_hierarchy.py with flags: --chapter, --input-dir, --output-dir, --base-indent, --max-depth, --dry-run
+- [X] T044 [US3] Test repair_bullet_hierarchy.py with --dry-run on chapter_01.md to verify bullet formatting
+- [X] T045 [US3] Run repair_bullet_hierarchy.py on all chapters to fix bullet hierarchy in output/chapters/05_repaired/
 
 **Checkpoint**: At this point, all bullet lists should have correct indentation and markers
 
@@ -150,14 +150,14 @@ description: "Task list for document structure repair feature implementation"
 
 **Purpose**: Final improvements and documentation
 
-- [ ] T058 [P] Create feature README.md in specs/005-document-structure-repair/ documenting implementation decisions and usage
-- [ ] T059 [P] Update requirements.txt if any new dependencies were added (should be none per research.md)
-- [ ] T060 [P] Add .gitignore entries for output/chapters/05_repaired/ if needed
-- [ ] T061 [P] Create usage examples in quickstart.md showing common workflows
-- [ ] T062 Review all generated reports (CHAPTER_5_ANALYSIS.md, REPAIR_REPORT.md, VALIDATION_REPORT.md) for completeness
-- [ ] T063 Verify all repaired chapters in output/chapters/05_repaired/ are ready for PDF generation
-- [ ] T064 Run PDF generation test using repaired chapters to ensure compatibility
-- [ ] T065 Create implementation summary documenting: sections renumbered count, bullets fixed count, content restored status
+- [X] T058 [P] Create feature README.md in specs/005-document-structure-repair/ documenting implementation decisions and usage
+- [X] T059 [P] Update requirements.txt if any new dependencies were added (should be none per research.md)
+- [X] T060 [P] Add .gitignore entries for output/chapters/05_repaired/ if needed
+- [X] T061 [P] Create usage examples in quickstart.md showing common workflows
+- [X] T062 Review all generated reports (CHAPTER_5_ANALYSIS.md, REPAIR_REPORT.md, VALIDATION_REPORT.md) for completeness
+- [X] T063 Verify all repaired chapters in output/chapters/05_repaired/ are ready for PDF generation
+- [X] T064 Run PDF generation test using repaired chapters to ensure compatibility
+- [X] T065 Create implementation summary documenting: sections renumbered count, bullets fixed count, content restored status
 
 ---
 

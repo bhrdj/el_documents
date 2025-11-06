@@ -41,6 +41,11 @@ def preprocess_for_pdf(content):
 
     # Replace emoji and other problematic Unicode
     content = content.replace('🙏', '{prayer hands}')
+    content = content.replace('📚', '[stack]')
+    content = content.replace('⬅', '<-')
+    content = content.replace('➡', '->')
+    content = content.replace('⬆', '^')
+    content = content.replace('⬇', 'v')
 
     # Handle other common problematic characters
     replacements = {
@@ -56,16 +61,22 @@ def preprocess_for_pdf(content):
     for old, new in replacements.items():
         content = content.replace(old, new)
 
+    # Fix YAML parsing issues - add --- YAML delimiter at start to prevent interpretation
+    # If content starts with a heading, add YAML front matter delimiter
+    if not content.startswith('---'):
+        content = '---\n\n' + content
+
     # Fix deeply nested lists
     content = fix_deep_nesting(content, max_depth=4)
 
     return content
 
 def main():
-    # Process problematic chapters
+    # Process problematic chapters - fix in place for 05_repaired
     problematic = [
-        ('output/chapters/02_removedbullets/chapter_01.md', 'output/chapters/04_merged/chapter_01_fixed.md'),
-        ('output/chapters/04_merged/chapter_04.md', 'output/chapters/04_merged/chapter_04_fixed.md'),
+        ('output/chapters/05_repaired/chapter_01_fixed.md', 'output/chapters/05_repaired/chapter_01_fixed.md'),
+        ('output/chapters/05_repaired/chapter_04_fixed.md', 'output/chapters/05_repaired/chapter_04_fixed.md'),
+        ('output/chapters/05_repaired/chapter_05.md', 'output/chapters/05_repaired/chapter_05.md'),
     ]
 
     for input_file, output_file in problematic:
