@@ -100,6 +100,10 @@ pip install -r requirements.txt
 source .venv/bin/activate
 ```
 
+## System Dependencies
+
+**Required:** See `docs/system-setup.md` for system-level dependencies (pandoc, etc.)
+
 ## Common Patterns
 
 ### Running Python Scripts
