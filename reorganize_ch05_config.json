@@ -1,0 +1,9 @@
+{
+  "input": "output/chapters/05_repaired/ch05_older_stage02.md",
+  "plan": "output/chapters/05_repaired/ch05_macro_analysis.md",
+  "output": "output/chapters/05_repaired/ch05_parallel_final.md",
+  "sections": "5.1:Introduction,5.2:Guiding Principles for Enrichment,5.3:Group Sizes for Structured Activities,5.4:Activity and Game Compendium,5.5:Integrating Enrichment into Daily Routines,5.6:Educational Tools,5.7:Child-Centered Learning Strategies,5.8:Special Considerations",
+  "model": "gemini-2.5-pro",
+  "temperature": 0.2,
+  "max_workers": 8
+}

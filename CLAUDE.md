@@ -121,6 +121,42 @@ pip install package-name
 pip freeze > requirements.txt  # Update requirements immediately
 ```
 
+## AI API Standards
+
+### Gemini API (NON-NEGOTIABLE)
+
+**Standard Model: gemini-2.5-pro**
+
+All Gemini API calls MUST use `gemini-2.5-pro` unless there's a specific documented reason to use another model.
+
+**Why:**
+- Most capable model for document processing and reorganization
+- Supports context caching (75-90% cost savings on repeated context)
+- Better reasoning and content preservation
+- Consistent quality across the project
+
+**Context Caching:**
+- Gemini 2.5 Pro supports automatic implicit caching (min 2,048 tokens)
+- Explicit caching available for 90% savings (min 4,096 tokens)
+- Always enable for documents >4K tokens
+
+**Usage in scripts:**
+```python
+from lib.gemini_api import call_gemini
+
+response = call_gemini(
+    prompt,
+    model="gemini-2.5-pro",  # Standard model
+    temperature=0.2,          # Lower for deterministic tasks
+    max_output_tokens=50000
+)
+```
+
+**Parallel Processing:**
+- Use `concurrent.futures` for independent API calls
+- Process sections/chunks in parallel when possible
+- Example: Document reorganization with 8 sections = 8 parallel calls
+
 ## Governance
 
 **CLAUDE.md supersedes all other documentation.**
@@ -171,11 +207,15 @@ pip install -r requirements.txt
 
 ---
 
-**Version**: 1.0.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-05
+**Version**: 1.1.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-08
 
 ## Active Technologies
 - Python 3.11 + markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx (005-document-structure-repair)
+- Gemini 2.5 Pro API with context caching (document reorganization, content processing)
 - File-based markdown documents in `output/chapters/` with staged processing directories (005-document-structure-repair)
+- Parallel processing with `concurrent.futures` for AI API calls
 
 ## Recent Changes
+- 2025-11-08: Added AI API Standards section - standardized on gemini-2.5-pro for all Gemini API calls
+- 2025-11-08: Added parallel processing patterns for document reorganization
 - 005-document-structure-repair: Added Python 3.11 + markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx
