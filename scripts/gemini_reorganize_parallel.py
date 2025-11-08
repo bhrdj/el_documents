@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-Parallel document reorganization using Gemini.
+Parallel document reorganization using Gemini with token tracking and cost estimation.
 
 This modular script can reorganize any chapter/document by:
 1. Loading a reorganization plan with new section structure
 2. Feeding the full original document to Gemini in parallel for each section
 3. Combining sections in the correct order
+4. Tracking token usage and estimating costs
 
 Usage:
     .venv/bin/python scripts/gemini_reorganize_parallel.py \\
-        --input output/chapters/05_repaired/ch05_older_stage02.md \\
-        --plan output/chapters/05_repaired/ch05_macro_analysis.md \\
-        --output output/chapters/05_repaired/ch05_final.md \\
+        --input output/markdown/05_repaired/ch05_older_stage02.md \\
+        --plan output/markdown/05_repaired/ch05_macro_analysis.md \\
+        --output output/markdown/05_repaired/ch05_final.md \\
         --sections "5.1:Introduction,5.2:Guiding Principles,5.3:Group Sizes,..."
 
 Or use a config file:
@@ -21,10 +22,11 @@ Or use a config file:
 import sys
 import argparse
 import json
+import logging
 from pathlib import Path
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 
 # Add lib to path
 sys.path.insert(0, str(Path(__file__).parent / "lib"))
@@ -32,11 +34,83 @@ sys.path.insert(0, str(Path(__file__).parent / "lib"))
 from gemini_api import call_gemini
 
 
+# Gemini 2.5 Pro Pricing (as of 2025-01-09)
+# Source: https://ai.google.dev/gemini-api/docs/pricing
+PRICING = {
+    'gemini-2.5-pro': {
+        'input': 1.25 / 1_000_000,   # $1.25 per million tokens (≤200K context)
+        'output': 10.00 / 1_000_000,  # $10.00 per million tokens
+    },
+    'gemini-2.5-pro-exp': {
+        'input': 4.00 / 1_000_000,   # $4.00 per million tokens (preview)
+        'output': 20.00 / 1_000_000,  # $20.00 per million tokens
+    }
+}
+
+
 def get_nairobi_time():
     """Get current time in Nairobi timezone (UTC+3)."""
     utc_now = datetime.utcnow()
     nairobi_time = utc_now + timedelta(hours=3)
     return nairobi_time.strftime('%Y-%m-%d %H:%M:%S EAT')
+
+
+def calculate_cost(input_tokens: int, output_tokens: int, model: str = 'gemini-2.5-pro') -> float:
+    """
+    Calculate API cost for given token usage.
+
+    Args:
+        input_tokens: Number of input (prompt) tokens
+        output_tokens: Number of output (completion) tokens
+        model: Model name for pricing lookup
+
+    Returns:
+        Estimated cost in USD
+    """
+    pricing = PRICING.get(model, PRICING['gemini-2.5-pro'])
+    cost = (input_tokens * pricing['input']) + (output_tokens * pricing['output'])
+    return cost
+
+
+def setup_logging(output_file: Path) -> logging.Logger:
+    """
+    Set up parallel logging to file and stdout.
+
+    Args:
+        output_file: Output markdown file path (log will be sibling with .log extension)
+
+    Returns:
+        Configured logger
+    """
+    log_file = output_file.parent / f"{output_file.stem}.log"
+
+    # Create logger
+    logger = logging.getLogger('reorganize')
+    logger.setLevel(logging.INFO)
+
+    # Remove existing handlers
+    logger.handlers = []
+
+    # File handler
+    file_handler = logging.FileHandler(log_file, mode='w', encoding='utf-8')
+    file_handler.setLevel(logging.INFO)
+    file_formatter = logging.Formatter('%(message)s')
+    file_handler.setFormatter(file_formatter)
+    logger.addHandler(file_handler)
+
+    # Console handler
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    console_formatter = logging.Formatter('%(message)s')
+    console_handler.setFormatter(console_formatter)
+    logger.addHandler(console_handler)
+
+    return logger
+
+
+def log_and_print(logger: logging.Logger, message: str):
+    """Log message to both file and stdout."""
+    logger.info(message)
 
 
 def parse_sections(sections_str: str) -> List[Tuple[str, str]]:
@@ -61,17 +135,18 @@ def generate_section_parallel(
     full_original_content: str,
     analysis_plan: str,
     is_first: bool,
+    logger: logging.Logger,
     model: str = "gemini-2.5-pro",
     temperature: float = 0.2
-) -> Tuple[str, str, str, int]:
+) -> Dict:
     """
     Generate a section - designed to run in parallel.
 
     Returns:
-        Tuple of (section_num, section_title, generated_content, word_count)
+        Dict with section_num, section_title, content, words, and usage stats
     """
     start_time = get_nairobi_time()
-    print(f"[{start_time}] Starting {section_num}: {section_title}")
+    log_and_print(logger, f"[{start_time}] Starting {section_num}: {section_title}")
 
     if is_first:
         prompt = f"""You are reorganizing a document according to a reorganization plan.
@@ -125,25 +200,57 @@ Requirements:
 
 OUTPUT: Return ONLY the reorganized markdown for section {section_num}. Do NOT include the main title."""
 
-    # Call Gemini
+    # Call Gemini with usage tracking
     try:
-        content = call_gemini(
+        response = call_gemini(
             prompt,
             model=model,
             temperature=temperature,
-            max_output_tokens=50000
+            max_output_tokens=50000,
+            return_usage=True
         )
 
+        content = response['text']
+        usage = response['usage']
         words = len(content.split())
-        end_time = get_nairobi_time()
-        print(f"[{end_time}] ✓ Completed {section_num}: {words:,} words")
 
-        return (section_num, section_title, content, words)
+        # Calculate cost
+        cost = calculate_cost(
+            usage['prompt_tokens'],
+            usage['completion_tokens'],
+            model
+        )
+
+        end_time = get_nairobi_time()
+        log_and_print(
+            logger,
+            f"[{end_time}] ✓ {section_num}: {words:,} words | "
+            f"Tokens: {usage['prompt_tokens']:,}in + {usage['completion_tokens']:,}out = {usage['total_tokens']:,} | "
+            f"Cost: ${cost:.4f}"
+        )
+
+        return {
+            'section_num': section_num,
+            'section_title': section_title,
+            'content': content,
+            'words': words,
+            'usage': usage,
+            'cost': cost,
+            'success': True
+        }
 
     except Exception as e:
         end_time = get_nairobi_time()
-        print(f"[{end_time}] ✗ Failed {section_num}: {e}")
-        return (section_num, section_title, "", 0)
+        log_and_print(logger, f"[{end_time}] ✗ Failed {section_num}: {e}")
+        return {
+            'section_num': section_num,
+            'section_title': section_title,
+            'content': "",
+            'words': 0,
+            'usage': {'prompt_tokens': 0, 'completion_tokens': 0, 'total_tokens': 0},
+            'cost': 0.0,
+            'success': False
+        }
 
 
 def reorganize_document(
@@ -170,17 +277,21 @@ def reorganize_document(
     Returns:
         True if successful, False otherwise
     """
-    print("="*70)
-    print("Parallel Document Reorganization")
-    print("="*70)
-    print(f"Started: {get_nairobi_time()}")
-    print(f"Input: {input_file}")
-    print(f"Plan: {plan_file}")
-    print(f"Output: {output_file}")
-    print(f"Sections: {len(sections)}")
-    print(f"Model: {model}")
-    print(f"Max parallel workers: {max_workers}")
-    print()
+    # Set up logging
+    logger = setup_logging(output_file)
+
+    log_and_print(logger, "="*80)
+    log_and_print(logger, "Parallel Document Reorganization with Token Tracking")
+    log_and_print(logger, "="*80)
+    log_and_print(logger, f"Started: {get_nairobi_time()}")
+    log_and_print(logger, f"Input: {input_file}")
+    log_and_print(logger, f"Plan: {plan_file}")
+    log_and_print(logger, f"Output: {output_file}")
+    log_and_print(logger, f"Log: {output_file.parent / f'{output_file.stem}.log'}")
+    log_and_print(logger, f"Sections: {len(sections)}")
+    log_and_print(logger, f"Model: {model}")
+    log_and_print(logger, f"Max parallel workers: {max_workers}")
+    log_and_print(logger, "")
 
     # Read files
     with open(input_file, 'r', encoding='utf-8') as f:
@@ -190,15 +301,18 @@ def reorganize_document(
         analysis_plan = f.read()
 
     total_words = len(original_content.split())
-    print(f"Input words: {total_words:,}")
-    print()
+    log_and_print(logger, f"Input words: {total_words:,}")
+    log_and_print(logger, "")
 
     # Process sections in parallel
-    print(f"{'='*70}")
-    print(f"Processing {len(sections)} sections in parallel...")
-    print(f"{'='*70}\n")
+    log_and_print(logger, f"{'='*80}")
+    log_and_print(logger, f"Processing {len(sections)} sections in parallel...")
+    log_and_print(logger, f"{'='*80}\n")
 
     results = {}
+    total_input_tokens = 0
+    total_output_tokens = 0
+    total_cost = 0.0
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
@@ -211,6 +325,7 @@ def reorganize_document(
                 original_content,
                 analysis_plan,
                 is_first=(i == 0),
+                logger=logger,
                 model=model,
                 temperature=temperature
             )
@@ -218,24 +333,27 @@ def reorganize_document(
 
         # Collect results as they complete
         for future in as_completed(future_to_section):
-            section_num, section_title, content, words = future.result()
-            results[section_num] = {
-                'title': section_title,
-                'content': content,
-                'words': words
-            }
+            result = future.result()
+            section_num = result['section_num']
+            results[section_num] = result
 
-    print()
-    print(f"{'='*70}")
-    print("All sections completed - combining...")
-    print(f"{'='*70}\n")
+            # Accumulate totals
+            if result['success']:
+                total_input_tokens += result['usage']['prompt_tokens']
+                total_output_tokens += result['usage']['completion_tokens']
+                total_cost += result['cost']
+
+    log_and_print(logger, "")
+    log_and_print(logger, f"{'='*80}")
+    log_and_print(logger, "All sections completed - combining...")
+    log_and_print(logger, f"{'='*80}\n")
 
     # Combine sections in order
     combined_parts = []
     total_output_words = 0
 
     for section_num, section_title in sections:
-        if section_num in results:
+        if section_num in results and results[section_num]['success']:
             content = results[section_num]['content'].strip()
             words = results[section_num]['words']
 
@@ -248,9 +366,9 @@ def reorganize_document(
             combined_parts.append(content)
             total_output_words += words
 
-            print(f"  ✓ {section_num}: {section_title} ({words:,} words)")
+            log_and_print(logger, f"  ✓ {section_num}: {section_title} ({words:,} words)")
         else:
-            print(f"  ✗ {section_num}: {section_title} (MISSING)")
+            log_and_print(logger, f"  ✗ {section_num}: {section_title} (MISSING)")
 
     # Join all parts
     combined = "\n\n".join(combined_parts)
@@ -266,20 +384,29 @@ def reorganize_document(
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(combined)
 
-    # Report
+    # Final report
     size_kb = output_file.stat().st_size / 1024
 
-    print()
-    print("="*70)
-    print("✓ REORGANIZATION COMPLETE!")
-    print("="*70)
-    print(f"Completed: {get_nairobi_time()}")
-    print(f"Output file: {output_file}")
-    print(f"File size: {size_kb:.1f} KB")
-    print(f"Output words: {total_output_words:,}")
-    print(f"Input words: {total_words:,}")
-    print(f"Word retention: {total_output_words / total_words * 100:.1f}%")
-    print("="*70)
+    log_and_print(logger, "")
+    log_and_print(logger, "="*80)
+    log_and_print(logger, "✓ REORGANIZATION COMPLETE!")
+    log_and_print(logger, "="*80)
+    log_and_print(logger, f"Completed: {get_nairobi_time()}")
+    log_and_print(logger, "")
+    log_and_print(logger, "Output Metrics:")
+    log_and_print(logger, f"  File: {output_file}")
+    log_and_print(logger, f"  Size: {size_kb:.1f} KB")
+    log_and_print(logger, f"  Words: {total_output_words:,}")
+    log_and_print(logger, f"  Word retention: {total_output_words / total_words * 100:.1f}%")
+    log_and_print(logger, "")
+    log_and_print(logger, "Token Usage:")
+    log_and_print(logger, f"  Input tokens: {total_input_tokens:,}")
+    log_and_print(logger, f"  Output tokens: {total_output_tokens:,}")
+    log_and_print(logger, f"  Total tokens: {total_input_tokens + total_output_tokens:,}")
+    log_and_print(logger, "")
+    log_and_print(logger, f"Estimated Cost: ${total_cost:.4f}")
+    log_and_print(logger, f"  ({model} @ ${PRICING[model]['input']*1_000_000:.2f}/M in, ${PRICING[model]['output']*1_000_000:.2f}/M out)")
+    log_and_print(logger, "="*80)
 
     return True
 
@@ -293,7 +420,7 @@ def load_config(config_file: Path) -> Dict:
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Reorganize documents in parallel using Gemini",
+        description="Reorganize documents in parallel using Gemini with token tracking",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 

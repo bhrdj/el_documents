@@ -70,24 +70,29 @@ def call_gemini(
     max_output_tokens: Optional[int] = None,
     system_instruction: Optional[str] = None,
     auto_configure: bool = True,
+    return_usage: bool = False,
     **kwargs
-) -> str:
+):
     """
     Call Gemini API with a text prompt and return the response.
 
     Args:
         prompt: The text prompt to send to Gemini
         model: Model name (default: "gemini-1.5-flash")
-               Other options: "gemini-1.5-pro", "gemini-1.0-pro"
+               Other options: "gemini-2.5-pro", "gemini-1.5-pro", "gemini-1.0-pro"
         temperature: Sampling temperature (0.0-2.0, default: 0.7)
                     Lower = more deterministic, Higher = more creative
         max_output_tokens: Maximum tokens in response (default: None = model default)
         system_instruction: Optional system instruction for the model
         auto_configure: Automatically configure API if not already done (default: True)
+        return_usage: If True, return dict with 'text' and 'usage' keys (default: False)
         **kwargs: Additional generation config parameters
 
     Returns:
-        Generated text response from Gemini
+        If return_usage=False: Generated text response from Gemini (str)
+        If return_usage=True: Dict with keys:
+            - 'text': Generated text
+            - 'usage': Dict with 'prompt_tokens', 'completion_tokens', 'total_tokens'
 
     Raises:
         Exception: If API call fails
@@ -95,6 +100,10 @@ def call_gemini(
     Example:
         >>> response = call_gemini("Explain what a neural network is")
         >>> print(response)
+        >>>
+        >>> response = call_gemini("Explain AI", return_usage=True)
+        >>> print(response['text'])
+        >>> print(f"Tokens used: {response['usage']['total_tokens']}")
     """
     if auto_configure:
         try:
@@ -126,7 +135,19 @@ def call_gemini(
         generation_config=generation_config
     )
 
-    return response.text
+    if return_usage:
+        # Extract token usage from response
+        usage = {
+            'prompt_tokens': getattr(response.usage_metadata, 'prompt_token_count', 0),
+            'completion_tokens': getattr(response.usage_metadata, 'candidates_token_count', 0),
+            'total_tokens': getattr(response.usage_metadata, 'total_token_count', 0),
+        }
+        return {
+            'text': response.text,
+            'usage': usage
+        }
+    else:
+        return response.text
 
 
 def call_gemini_streaming(

@@ -13,8 +13,8 @@
    pip install -r requirements.txt
    ```
 
-2. **Input Files**: Processed chapters must exist in `output/chapters/04_merged/`
-   - Verify: `ls output/chapters/04_merged/chapter_*.md`
+2. **Input Files**: Processed chapters must exist in `output/markdown/04_merged/`
+   - Verify: `ls output/markdown/04_merged/chapter_*.md`
 
 3. **Working Directory**: Run all commands from repository root
 
@@ -28,7 +28,7 @@ The complete repair pipeline processes all chapters in sequence:
 # Run the complete repair pipeline
 .venv/bin/python scripts/repair_all.py
 
-# Output will be in output/chapters/05_repaired/
+# Output will be in output/markdown/05_repaired/
 # Reports generated:
 #   - REPAIR_REPORT.md (what was fixed)
 #   - VALIDATION_REPORT.md (verification results)
@@ -65,12 +65,12 @@ Analyzing Chapter 5 content...
 
 Status: MISSING CONTENT
 Missing sections: 4 sections from part 2
-Details: output/chapters/05_repaired/CHAPTER_5_ANALYSIS.md
+Details: output/markdown/05_repaired/CHAPTER_5_ANALYSIS.md
 ```
 
 **Options**:
 - `--restore`: Automatically restore missing content
-- `--output-dir PATH`: Specify output directory (default: output/chapters/05_repaired)
+- `--output-dir PATH`: Specify output directory (default: output/markdown/05_repaired)
 - `--verbose`: Show detailed section comparison
 
 ---
@@ -95,8 +95,8 @@ Total: 156 sections renumbered across 10 chapters
 
 **Options**:
 - `--chapter N`: Process only specific chapter (0-9)
-- `--input-dir PATH`: Input directory (default: output/chapters/04_merged)
-- `--output-dir PATH`: Output directory (default: output/chapters/05_repaired)
+- `--input-dir PATH`: Input directory (default: output/markdown/04_merged)
+- `--output-dir PATH`: Output directory (default: output/markdown/05_repaired)
 - `--dry-run`: Show what would be changed without modifying files
 - `--format STYLE`: Numbering style ('decimal' [default], 'outline')
 
@@ -127,8 +127,8 @@ Total: 215 bullet lists repaired across 10 chapters
 
 **Options**:
 - `--chapter N`: Process only specific chapter (0-9)
-- `--input-dir PATH`: Input directory (default: output/chapters/04_merged)
-- `--output-dir PATH`: Output directory (default: output/chapters/05_repaired)
+- `--input-dir PATH`: Input directory (default: output/markdown/04_merged)
+- `--output-dir PATH`: Output directory (default: output/markdown/05_repaired)
 - `--base-indent N`: Base indentation unit in spaces (default: auto-detect)
 - `--max-depth N`: Maximum nesting depth (default: 4 for PDF compatibility)
 - `--dry-run`: Preview changes without modifying files
@@ -157,7 +157,7 @@ Validating chapter_00.md...
 ...
 Overall: 10/10 chapters PASSED validation
 
-Details: output/chapters/05_repaired/VALIDATION_REPORT.md
+Details: output/markdown/05_repaired/VALIDATION_REPORT.md
 ```
 
 **Validation Checks**:
@@ -170,7 +170,7 @@ Details: output/chapters/05_repaired/VALIDATION_REPORT.md
 - Maximum nesting depths respected
 
 **Options**:
-- `--input-dir PATH`: Directory to validate (default: output/chapters/05_repaired)
+- `--input-dir PATH`: Directory to validate (default: output/markdown/05_repaired)
 - `--strict`: Fail on warnings, not just errors
 - `--output PATH`: Validation report file path
 
@@ -206,7 +206,7 @@ Test repairs on one chapter before processing all:
 .venv/bin/python scripts/validate_structure.py
 
 # Review output
-cat output/chapters/05_repaired/chapter_05.md | less
+cat output/markdown/05_repaired/chapter_05.md | less
 ```
 
 ---
@@ -234,7 +234,7 @@ Detailed analysis of Chapter 5 content:
 .venv/bin/python scripts/analyze_chapter5.py --verbose
 
 # Review analysis report
-cat output/chapters/05_repaired/CHAPTER_5_ANALYSIS.md
+cat output/markdown/05_repaired/CHAPTER_5_ANALYSIS.md
 
 # Restore missing content if needed
 .venv/bin/python scripts/analyze_chapter5.py --restore
@@ -247,7 +247,7 @@ cat output/chapters/05_repaired/CHAPTER_5_ANALYSIS.md
 After running repairs, the output directory contains:
 
 ```
-output/chapters/05_repaired/
+output/markdown/05_repaired/
 ├── chapter_00.md              # Repaired chapters
 ├── chapter_01.md
 ├── chapter_02.md
@@ -270,7 +270,7 @@ After running repairs, verify the results:
 
 ### 1. Check Repair Report
 ```bash
-cat output/chapters/05_repaired/REPAIR_REPORT.md
+cat output/markdown/05_repaired/REPAIR_REPORT.md
 ```
 
 Look for:
@@ -281,7 +281,7 @@ Look for:
 
 ### 2. Check Validation Report
 ```bash
-cat output/chapters/05_repaired/VALIDATION_REPORT.md
+cat output/markdown/05_repaired/VALIDATION_REPORT.md
 ```
 
 Look for:
@@ -292,7 +292,7 @@ Look for:
 ### 3. Spot-Check Content
 ```bash
 # Check chapter 5 completeness
-wc -l output/chapters/04_merged/chapter_05.md output/chapters/05_repaired/chapter_05.md
+wc -l output/markdown/04_merged/chapter_05.md output/markdown/05_repaired/chapter_05.md
 
 # Should show similar or higher line count in repaired version
 ```
@@ -300,18 +300,18 @@ wc -l output/chapters/04_merged/chapter_05.md output/chapters/05_repaired/chapte
 ### 4. Visual Inspection
 ```bash
 # Compare before/after for a chapter
-diff output/chapters/04_merged/chapter_01.md output/chapters/05_repaired/chapter_01.md | less
+diff output/markdown/04_merged/chapter_01.md output/markdown/05_repaired/chapter_01.md | less
 ```
 
 ---
 
 ## Troubleshooting
 
-### Issue: "No such file or directory: output/chapters/04_merged"
+### Issue: "No such file or directory: output/markdown/04_merged"
 
 **Solution**: Ensure previous processing stages are complete:
 ```bash
-ls output/chapters/04_merged/
+ls output/markdown/04_merged/
 # Should show chapter_*.md files
 ```
 
@@ -332,7 +332,7 @@ If missing, run earlier processing stages first.
 
 **Solution**: Check validation report for specific issues:
 ```bash
-cat output/chapters/05_repaired/VALIDATION_REPORT.md
+cat output/markdown/05_repaired/VALIDATION_REPORT.md
 # Look for ERROR entries and line numbers
 ```
 
@@ -363,7 +363,7 @@ After structure repair, the repaired chapters can be used for PDF generation:
 
 ```bash
 # Update PDF generator to use stage 05_repaired
-.venv/bin/python scripts/pdf_generator.py --input-dir output/chapters/05_repaired
+.venv/bin/python scripts/pdf_generator.py --input-dir output/markdown/05_repaired
 
 # Output: PDFs in output/pdfs/
 ```

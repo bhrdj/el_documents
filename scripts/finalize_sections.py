@@ -89,7 +89,7 @@ def split_by_headings(content: str, max_words: int = 1644, depth: int = 0) -> Li
 
 def main():
     """Main execution."""
-    sections_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired/sections/final")
+    sections_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired/sections/final")
 
     # Read all current sections
     section_files = sorted(sections_dir.glob("section_*.md"))

@@ -7,7 +7,7 @@
 
 ## Overview
 
-Successfully implemented all three user stories for document structure repair in the EL manual processing pipeline. All repairs have been applied to chapters in `output/chapters/05_repaired/`.
+Successfully implemented all three user stories for document structure repair in the EL manual processing pipeline. All repairs have been applied to chapters in `output/markdown/05_repaired/`.
 
 ## User Stories Completed
 
@@ -115,11 +115,11 @@ Created modular, reusable components:
 - `CLAUDE.md` - Updated with Python 3.11 and processing details
 
 ### Output Files (5 repaired chapters)
-- `output/chapters/05_repaired/chapter_01_fixed.md`
-- `output/chapters/05_repaired/chapter_04.md`
-- `output/chapters/05_repaired/chapter_04_fixed.md`
-- `output/chapters/05_repaired/chapter_05.md`
-- `output/chapters/05_repaired/chapter_05_deduplicated.md`
+- `output/markdown/05_repaired/chapter_01_fixed.md`
+- `output/markdown/05_repaired/chapter_04.md`
+- `output/markdown/05_repaired/chapter_04_fixed.md`
+- `output/markdown/05_repaired/chapter_05.md`
+- `output/markdown/05_repaired/chapter_05_deduplicated.md`
 
 ## Success Criteria Met
 

@@ -19,7 +19,7 @@ description: "Task list for document structure repair feature implementation"
 
 ## Path Conventions
 
-- **Single project structure**: `scripts/` for Python scripts, `output/chapters/05_repaired/` for output
+- **Single project structure**: `scripts/` for Python scripts, `output/markdown/05_repaired/` for output
 - **Tests**: `tests/` at repository root
 - Paths follow existing el_documents repository structure
 
@@ -29,7 +29,7 @@ description: "Task list for document structure repair feature implementation"
 
 **Purpose**: Create project structure and prepare output directories
 
-- [X] T001 Create output directory structure: `output/chapters/05_repaired/`
+- [X] T001 Create output directory structure: `output/markdown/05_repaired/`
 - [X] T002 [P] Create tests directory structure: `tests/` with subdirectories for unit and integration tests
 - [X] T003 [P] Create feature README at `specs/005-document-structure-repair/README.md` documenting the feature
 
@@ -70,7 +70,7 @@ description: "Task list for document structure repair feature implementation"
 - [X] T017 [US1] Add report generation to analyze_chapter5.py to create CHAPTER_5_ANALYSIS.md with findings
 - [X] T018 [US1] Add CLI interface to analyze_chapter5.py with flags: --restore, --output-dir, --verbose
 - [X] T019 [US1] Test analyze_chapter5.py script with dry-run to verify detection accuracy
-- [X] T020 [US1] Run analyze_chapter5.py with --restore flag to restore missing Chapter 5 content to output/chapters/05_repaired/chapter_05.md
+- [X] T020 [US1] Run analyze_chapter5.py with --restore flag to restore missing Chapter 5 content to output/markdown/05_repaired/chapter_05.md
 
 **Checkpoint**: At this point, Chapter 5 should be complete with all content restored and verified
 
@@ -95,7 +95,7 @@ description: "Task list for document structure repair feature implementation"
 - [X] T029 [US2] Add cross-reference preservation logic to repair_section_numbering.py to maintain internal links
 - [X] T030 [US2] Add CLI interface to repair_section_numbering.py with flags: --chapter, --input-dir, --output-dir, --dry-run, --format
 - [X] T031 [US2] Test repair_section_numbering.py with --dry-run on chapter_01.md to verify numbering logic
-- [X] T032 [US2] Run repair_section_numbering.py on all chapters to apply consistent numbering to output/chapters/05_repaired/
+- [X] T032 [US2] Run repair_section_numbering.py on all chapters to apply consistent numbering to output/markdown/05_repaired/
 
 **Checkpoint**: At this point, all documents should have correct hierarchical section numbering
 
@@ -121,7 +121,7 @@ description: "Task list for document structure repair feature implementation"
 - [X] T042 [US3] Add hierarchy repair application to repair_bullet_hierarchy.py for each list block
 - [X] T043 [US3] Add CLI interface to repair_bullet_hierarchy.py with flags: --chapter, --input-dir, --output-dir, --base-indent, --max-depth, --dry-run
 - [X] T044 [US3] Test repair_bullet_hierarchy.py with --dry-run on chapter_01.md to verify bullet formatting
-- [X] T045 [US3] Run repair_bullet_hierarchy.py on all chapters to fix bullet hierarchy in output/chapters/05_repaired/
+- [X] T045 [US3] Run repair_bullet_hierarchy.py on all chapters to fix bullet hierarchy in output/markdown/05_repaired/
 
 **Checkpoint**: At this point, all bullet lists should have correct indentation and markers
 
@@ -137,7 +137,7 @@ description: "Task list for document structure repair feature implementation"
 - [ ] T049 Add content completeness validation to validate_structure.py: verify no content loss from source files
 - [ ] T050 Add cross-reference validation to validate_structure.py: verify internal links still work
 - [ ] T051 Add CLI interface to validate_structure.py with flags: --input-dir, --strict, --output
-- [ ] T052 Run validate_structure.py on output/chapters/05_repaired/ to generate VALIDATION_REPORT.md
+- [ ] T052 Run validate_structure.py on output/markdown/05_repaired/ to generate VALIDATION_REPORT.md
 - [ ] T053 Create master repair script in `scripts/repair_all.py` that orchestrates all three repair operations
 - [ ] T054 Add sequential processing to repair_all.py: analyze_chapter5 → repair_section_numbering → repair_bullet_hierarchy → validate_structure
 - [ ] T055 Add comprehensive reporting to repair_all.py to generate REPAIR_REPORT.md with summary of all changes
@@ -152,10 +152,10 @@ description: "Task list for document structure repair feature implementation"
 
 - [X] T058 [P] Create feature README.md in specs/005-document-structure-repair/ documenting implementation decisions and usage
 - [X] T059 [P] Update requirements.txt if any new dependencies were added (should be none per research.md)
-- [X] T060 [P] Add .gitignore entries for output/chapters/05_repaired/ if needed
+- [X] T060 [P] Add .gitignore entries for output/markdown/05_repaired/ if needed
 - [X] T061 [P] Create usage examples in quickstart.md showing common workflows
 - [X] T062 Review all generated reports (CHAPTER_5_ANALYSIS.md, REPAIR_REPORT.md, VALIDATION_REPORT.md) for completeness
-- [X] T063 Verify all repaired chapters in output/chapters/05_repaired/ are ready for PDF generation
+- [X] T063 Verify all repaired chapters in output/markdown/05_repaired/ are ready for PDF generation
 - [X] T064 Run PDF generation test using repaired chapters to ensure compatibility
 - [X] T065 Create implementation summary documenting: sections renumbered count, bullets fixed count, content restored status
 

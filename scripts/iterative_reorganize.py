@@ -114,8 +114,8 @@ Please output ONLY the reorganized content for Section {section_num}. Do NOT rep
 
 def main():
     """Main execution."""
-    sections_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired/sections/reorganize_input")
-    output_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired")
+    sections_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired/sections/reorganize_input")
+    output_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired")
 
     # Get all section files
     section_files = sorted(sections_dir.glob("section_*.md"))

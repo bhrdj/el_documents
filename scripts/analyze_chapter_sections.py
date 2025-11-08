@@ -109,7 +109,7 @@ def find_logical_divisions(sections: List[Tuple], total_words: int,
 
 def main():
     """Main execution."""
-    file_path = Path("/home/steven/git/el_documents/output/chapters/05_repaired/ch05_v01.md")
+    file_path = Path("/home/steven/git/el_documents/output/markdown/05_repaired/ch05_v01.md")
 
     print("Analyzing Chapter 5 structure...\n")
 
@@ -134,7 +134,7 @@ def main():
         print()
 
     # Save division map
-    output_path = Path("/home/steven/git/el_documents/output/chapters/05_repaired/section_divisions.txt")
+    output_path = Path("/home/steven/git/el_documents/output/markdown/05_repaired/section_divisions.txt")
 
     with output_path.open('w') as f:
         f.write(f"Chapter 5 Section Divisions\n")

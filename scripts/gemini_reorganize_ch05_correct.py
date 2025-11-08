@@ -158,9 +158,9 @@ def main():
     """Main entry point."""
 
     # File paths - using ch05_older_stage02.md as requested
-    original_file = 'output/chapters/05_repaired/ch05_older_stage02.md'
-    analysis_file = 'output/chapters/05_repaired/ch05_macro_analysis.md'
-    output_file = 'output/chapters/05_repaired/ch05_v07_final.md'
+    original_file = 'output/markdown/05_repaired/ch05_older_stage02.md'
+    analysis_file = 'output/markdown/05_repaired/ch05_macro_analysis.md'
+    output_file = 'output/markdown/05_repaired/ch05_v07_final.md'
 
     print("="*70)
     print("Chapter 5 Reorganization (Correct Approach)")

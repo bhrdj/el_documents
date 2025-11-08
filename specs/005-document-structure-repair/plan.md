@@ -16,7 +16,7 @@ The technical approach uses Python-based markdown analysis and transformation, b
 
 **Language/Version**: Python 3.11
 **Primary Dependencies**: markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx
-**Storage**: File-based markdown documents in `output/chapters/` with staged processing directories
+**Storage**: File-based markdown documents in `output/markdown/` with staged processing directories
 **Testing**: pytest for unit and integration tests
 **Target Platform**: Linux server (development and production)
 **Project Type**: Single project with standalone processing scripts
@@ -73,7 +73,7 @@ scripts/
 ├── repair_bullet_hierarchy.py  # NEW: Fix bullet list formatting
 └── validate_structure.py       # NEW: Validate document structure post-repair
 
-output/chapters/
+output/markdown/
 ├── 00_raw/                     # Existing: Raw extracted chapters
 ├── 02_removedbullets/          # Existing: Bullets removed
 ├── 03_edited/                  # Existing: Edited content

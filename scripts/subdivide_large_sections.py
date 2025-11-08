@@ -69,7 +69,7 @@ def subdivide_section(content: str, section_num: int, target_words: int = 1500):
 
 def main():
     """Main execution."""
-    sections_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired/sections")
+    sections_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired/sections")
 
     # Read sections that need subdivision
     section_2 = (sections_dir / "section_02.md").read_text()

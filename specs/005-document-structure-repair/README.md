@@ -20,7 +20,7 @@ This feature repairs structural issues in processed markdown documents from the 
 - ✓ User Story 2: Section Numbering Repair - COMPLETE (T021-T032)
 - ✓ User Story 3: Bullet Hierarchy Repair - COMPLETE (T033-T045)
 - ✓ Post-fix: Unicode bullets converted to markdown in Chapter 5
-- Files processed: 5 chapters in `output/chapters/05_repaired/`
+- Files processed: 5 chapters in `output/markdown/05_repaired/`
 - Section numbering: 598 headers renumbered across all files
 - Bullet lists: 3,298 items in proper markdown format (updated after Unicode fix)
 
@@ -52,7 +52,7 @@ This feature repairs structural issues in processed markdown documents from the 
 
 ### Output
 
-All repaired documents are written to: `output/chapters/05_repaired/`
+All repaired documents are written to: `output/markdown/05_repaired/`
 
 Reports generated:
 - `CHAPTER_5_ANALYSIS.md` - Chapter 5 content analysis

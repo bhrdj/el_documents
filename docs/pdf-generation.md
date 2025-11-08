@@ -114,7 +114,7 @@ This pipeline was enhanced during feature `005-document-structure-repair`:
 
 ## Related Documentation
 
-- `output/chapters/README.md` - Chapter processing pipeline stages
+- `output/markdown/README.md` - Chapter processing pipeline stages
 - `specs/005-document-structure-repair/` - Structure repair feature
 - `scripts/fix_unicode_bullets.py` - Unicode bullet conversion utility
 

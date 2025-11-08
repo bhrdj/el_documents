@@ -206,15 +206,15 @@ def main():
     # Define latest version of each chapter
     # Using repaired chapters (05_repaired) for chapters 1, 4, 5
     chapters = [
-        ('output/chapters/03_edited/chapter_00.md', 'output/pdfs/chapter_00.pdf'),
-        ('output/chapters/05_repaired/chapter_01_fixed.md', 'output/pdfs/chapter_01.pdf'),
-        ('output/chapters/02_removedbullets/chapter_02.md', 'output/pdfs/chapter_02.pdf'),
-        ('output/chapters/02_removedbullets/chapter_03.md', 'output/pdfs/chapter_03.pdf'),
-        ('output/chapters/05_repaired/chapter_04_fixed.md', 'output/pdfs/chapter_04.pdf'),
-        ('output/chapters/05_repaired/chapter_05.md', 'output/pdfs/chapter_05.pdf'),
-        ('output/chapters/03_edited/chapter_07.md', 'output/pdfs/chapter_07.pdf'),
-        ('output/chapters/03_edited/chapter_08.md', 'output/pdfs/chapter_08.pdf'),
-        ('output/chapters/02_removedbullets/chapter_09.md', 'output/pdfs/chapter_09.pdf'),
+        ('output/markdown/03_edited/chapter_00.md', 'output/pdfs/chapter_00.pdf'),
+        ('output/markdown/05_repaired/chapter_01_fixed.md', 'output/pdfs/chapter_01.pdf'),
+        ('output/markdown/02_removedbullets/chapter_02.md', 'output/pdfs/chapter_02.pdf'),
+        ('output/markdown/02_removedbullets/chapter_03.md', 'output/pdfs/chapter_03.pdf'),
+        ('output/markdown/05_repaired/chapter_04_fixed.md', 'output/pdfs/chapter_04.pdf'),
+        ('output/markdown/05_repaired/chapter_05.md', 'output/pdfs/chapter_05.pdf'),
+        ('output/markdown/03_edited/chapter_07.md', 'output/pdfs/chapter_07.pdf'),
+        ('output/markdown/03_edited/chapter_08.md', 'output/pdfs/chapter_08.pdf'),
+        ('output/markdown/02_removedbullets/chapter_09.md', 'output/pdfs/chapter_09.pdf'),
     ]
 
     print("Generating PDFs for all chapters using weasyprint...\n")

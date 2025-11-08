@@ -14,7 +14,7 @@ from gemini_api import call_gemini
 
 def main():
     """Main execution."""
-    base_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired")
+    base_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired")
     v01_path = base_dir / "ch05_v01.md"
     v03_path = base_dir / "ch05_v03.md"
     comparison_path = base_dir / "ch05_compare_v01v03.md"

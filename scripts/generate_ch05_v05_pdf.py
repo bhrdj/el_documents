@@ -56,7 +56,7 @@ def generate_pdf(input_file: str, output_file: str):
 
 
 if __name__ == '__main__':
-    input_file = 'output/chapters/05_repaired/ch05_v07_final.md'
+    input_file = 'output/markdown/05_repaired/ch05_v07_final.md'
     output_file = 'output/pdfs/ch05_v07_final.pdf'
 
     success = generate_pdf(input_file, output_file)

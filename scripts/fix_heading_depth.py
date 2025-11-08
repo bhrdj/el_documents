@@ -43,8 +43,8 @@ def fix_heading_depth(content: str, max_depth: int = 4) -> str:
 
 def main():
     """Main execution."""
-    input_file = Path("/home/steven/git/el_documents/output/chapters/05_repaired/ch05_v03.md")
-    output_file = Path("/home/steven/git/el_documents/output/chapters/05_repaired/ch05_v03_fixed.md")
+    input_file = Path("/home/steven/git/el_documents/output/markdown/05_repaired/ch05_v03.md")
+    output_file = Path("/home/steven/git/el_documents/output/markdown/05_repaired/ch05_v03_fixed.md")
 
     print("Fixing heading depth in ch05_v03.md...")
     print(f"Input: {input_file}")

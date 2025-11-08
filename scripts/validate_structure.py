@@ -9,9 +9,9 @@ This script performs comprehensive validation on repaired markdown documents:
 - Cross-references: verify internal links still work
 
 Usage:
-    .venv/bin/python scripts/validate_structure.py --input-dir output/chapters/05_repaired
-    .venv/bin/python scripts/validate_structure.py --input-dir output/chapters/05_repaired --strict
-    .venv/bin/python scripts/validate_structure.py --input-dir output/chapters/05_repaired --output VALIDATION_REPORT.md
+    .venv/bin/python scripts/validate_structure.py --input-dir output/markdown/05_repaired
+    .venv/bin/python scripts/validate_structure.py --input-dir output/markdown/05_repaired --strict
+    .venv/bin/python scripts/validate_structure.py --input-dir output/markdown/05_repaired --output VALIDATION_REPORT.md
 """
 
 import argparse

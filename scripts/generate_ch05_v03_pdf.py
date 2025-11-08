@@ -12,7 +12,7 @@ from pdf_generator import generate_pdf
 
 def main():
     """Generate PDF for ch05_v03.md"""
-    input_file = Path('output/chapters/05_repaired/ch05_v03.md')
+    input_file = Path('output/markdown/05_repaired/ch05_v03.md')
     output_file = Path('output/pdfs/ch05_v03.pdf')
 
     print(f"Generating PDF for ch05_v03.md...")

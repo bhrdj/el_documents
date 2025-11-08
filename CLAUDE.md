@@ -212,7 +212,7 @@ pip install -r requirements.txt
 ## Active Technologies
 - Python 3.11 + markdown, pdfplumber, PyPDF2, sentence-transformers, regex, python-docx (005-document-structure-repair)
 - Gemini 2.5 Pro API with context caching (document reorganization, content processing)
-- File-based markdown documents in `output/chapters/` with staged processing directories (005-document-structure-repair)
+- File-based markdown documents in `output/markdown/` with staged processing directories (005-document-structure-repair)
 - Parallel processing with `concurrent.futures` for AI API calls
 
 ## Recent Changes

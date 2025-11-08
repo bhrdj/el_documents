@@ -56,7 +56,7 @@ def main():
     """Main entry point."""
     if len(sys.argv) < 2:
         print("Usage: fix_unicode_bullets.py <input_file> [output_file]")
-        print("Example: fix_unicode_bullets.py output/chapters/05_repaired/chapter_05.md")
+        print("Example: fix_unicode_bullets.py output/markdown/05_repaired/chapter_05.md")
         print("Example: fix_unicode_bullets.py input.md output.md")
         sys.exit(1)
 

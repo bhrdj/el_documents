@@ -1,8 +1,8 @@
 # Gemini-Based Document Reorganization
 
-**Date**: 2025-11-08
+**Date**: 2025-11-08 (Updated: 2025-11-09)
 **Feature**: 005-document-structure-repair
-**Status**: Completed
+**Status**: Active Development - Continuous Improvement
 
 ## Overview
 
@@ -70,7 +70,7 @@ Comprehensive document structure validation:
 
 ```bash
 .venv/bin/python scripts/validate_structure.py \
-  --input-dir output/chapters/05_repaired \
+  --input-dir output/markdown/05_repaired \
   --output VALIDATION_REPORT.md
 ```
 
@@ -90,9 +90,9 @@ Modular, reusable document reorganization:
 
 # Command line
 .venv/bin/python scripts/gemini_reorganize_parallel.py \
-  --input output/chapters/05_repaired/ch05_older_stage02.md \
-  --plan output/chapters/05_repaired/ch05_macro_analysis.md \
-  --output output/chapters/05_repaired/ch05_final.md \
+  --input output/markdown/05_repaired/ch05_older_stage02.md \
+  --plan output/markdown/05_repaired/ch05_macro_analysis.md \
+  --output output/markdown/05_repaired/ch05_final.md \
   --sections "5.1:Introduction,5.2:Principles,..."
 ```
 
@@ -131,12 +131,12 @@ with ThreadPoolExecutor(max_workers=8) as executor:
 - `scripts/gemini_reorganize_ch05_correct.py` - Chapter 5 specific (sequential)
 
 **Output**:
-- `output/chapters/05_repaired/ch05_v07_final.md` - Final reorganized chapter
-- `output/chapters/05_repaired/VALIDATION_REPORT.md` - Validation results
+- `output/markdown/05_repaired/ch05_v07_final.md` - Final reorganized chapter
+- `output/markdown/05_repaired/VALIDATION_REPORT.md` - Validation results
 - `output/pdfs/ch05_v07_final.pdf` - PDF version (230.8 KB)
 
 **Analysis**:
-- `output/chapters/05_repaired/ch05_macro_analysis.md` - Gemini's reorganization plan
+- `output/markdown/05_repaired/ch05_macro_analysis.md` - Gemini's reorganization plan
 
 **Config**:
 - `reorganize_ch05_config.json` - Example configuration
@@ -166,9 +166,71 @@ For future chapters/documents:
 3. Validate with `validate_structure.py`
 4. Generate PDF for review
 
+## Recent Enhancements (2025-11-09)
+
+### Token Tracking & Cost Estimation
+
+Added comprehensive API usage tracking:
+- **Token counting**: Track input/output tokens for each section
+- **Cost estimation**: Calculate costs based on current Gemini 2.5 Pro pricing
+  - Input: $1.25/M tokens (≤200K context)
+  - Output: $10.00/M tokens
+- **Real-time reporting**: Display token usage and costs during processing
+- **Cumulative tracking**: Total tokens and costs across all sections
+
+**Implementation**: Updated `gemini_api.py` with `return_usage=True` parameter and enhanced `gemini_reorganize_parallel.py` with cost calculation functions.
+
+### Parallel Logging
+
+Implemented redundant logging system:
+- **Dual output**: Log to both file (.log) and stdout simultaneously
+- **Progress tracking**: Nairobi timestamps (UTC+3) for all operations
+- **Quality metrics**: Word counts, retention percentages, token usage
+- **Cost transparency**: Per-section and total cost estimates
+
+**Benefits**: Complete audit trail, reproducible metrics, troubleshooting support
+
+### Organized Directory Structure
+
+Simplified output organization:
+- **Removed intermediate stages**: Eliminated 01_basicreformat, 02_removedbullets, 03_edited, 04_merged
+- **Renamed directory**: `output/chapters` → `output/markdown` (clearer semantics)
+- **Preserved key stages**: Kept `00_raw` (original imports) and `05_repaired` (final outputs)
+
+## Mutability & Continuous Improvement
+
+### Design Philosophy
+
+This specification and its implementation are **intentionally mutable** to support continuous improvement:
+
+1. **Spec-first iteration**: Document new approaches and learnings in specs before implementation
+2. **Reusable patterns**: Extract patterns into modular tools that can evolve
+3. **Metrics-driven**: Use token tracking and cost data to optimize future runs
+4. **Flexible architecture**: Config-driven tools adapt to different documents/chapters
+
+### Evolving Tools
+
+Current tools are designed for modification:
+
+- **gemini_reorganize_parallel.py**: Config-based, extensible with new metrics
+- **gemini_api.py**: Backward-compatible additions (e.g., `return_usage` parameter)
+- **validate_structure.py**: Pluggable validation rules
+
+### Future Considerations
+
+**Not yet implemented** (from next_steps.tmp):
+1. Grammar fixes and clarity improvements
+2. Paragraph-to-bullet reformatting
+3. Tagging system: `{CONFUSING}`, `{INCOMPLETE}`, `{REDUNDANT}`, `{MISPLACED}`
+4. Cross-chapter redundancy analysis
+
+**These remain in spec for future implementation** - showing our commitment to continuous refinement.
+
 ## References
 
 - [CLAUDE.md AI API Standards](../../CLAUDE.md#ai-api-standards)
 - [Gemini Context Caching Docs](https://ai.google.dev/gemini-api/docs/caching)
+- [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing)
 - [Feature Spec](spec.md)
 - [Implementation Plan](plan.md)
+- [Next Steps](../../next_steps.tmp)

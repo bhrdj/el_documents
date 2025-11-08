@@ -74,9 +74,9 @@ def preprocess_for_pdf(content):
 def main():
     # Process problematic chapters - fix in place for 05_repaired
     problematic = [
-        ('output/chapters/05_repaired/chapter_01_fixed.md', 'output/chapters/05_repaired/chapter_01_fixed.md'),
-        ('output/chapters/05_repaired/chapter_04_fixed.md', 'output/chapters/05_repaired/chapter_04_fixed.md'),
-        ('output/chapters/05_repaired/chapter_05.md', 'output/chapters/05_repaired/chapter_05.md'),
+        ('output/markdown/05_repaired/chapter_01_fixed.md', 'output/markdown/05_repaired/chapter_01_fixed.md'),
+        ('output/markdown/05_repaired/chapter_04_fixed.md', 'output/markdown/05_repaired/chapter_04_fixed.md'),
+        ('output/markdown/05_repaired/chapter_05.md', 'output/markdown/05_repaired/chapter_05.md'),
     ]
 
     for input_file, output_file in problematic:

@@ -16,7 +16,7 @@ def count_words(text: str) -> int:
 
 def main():
     """Main execution."""
-    file_path = Path("/home/steven/git/el_documents/output/chapters/05_repaired/ch05_v01.md")
+    file_path = Path("/home/steven/git/el_documents/output/markdown/05_repaired/ch05_v01.md")
     content = file_path.read_text()
 
     # Find and exclude the "Restored Content" section
@@ -129,7 +129,7 @@ def main():
         print()
 
     # Save sections to disk
-    output_dir = Path("/home/steven/git/el_documents/output/chapters/05_repaired/sections")
+    output_dir = Path("/home/steven/git/el_documents/output/markdown/05_repaired/sections")
     output_dir.mkdir(exist_ok=True)
 
     for sec in sections:

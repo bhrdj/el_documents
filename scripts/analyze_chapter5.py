@@ -194,14 +194,14 @@ def main():
     parser.add_argument(
         '--input-dir',
         type=Path,
-        default=Path("output/chapters/04_merged"),
-        help="Input directory with source files (default: output/chapters/04_merged)"
+        default=Path("output/markdown/04_merged"),
+        help="Input directory with source files (default: output/markdown/04_merged)"
     )
     parser.add_argument(
         '--output-dir',
         type=Path,
-        default=Path("output/chapters/05_repaired"),
-        help="Output directory for repaired files (default: output/chapters/05_repaired)"
+        default=Path("output/markdown/05_repaired"),
+        help="Output directory for repaired files (default: output/markdown/05_repaired)"
     )
     parser.add_argument(
         '--verbose',
