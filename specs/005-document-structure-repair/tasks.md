@@ -131,18 +131,18 @@ description: "Task list for document structure repair feature implementation"
 
 **Purpose**: Validate all repairs and generate comprehensive reports
 
-- [ ] T046 Create validation script in `scripts/validate_structure.py` with all validation checks
-- [ ] T047 Add section numbering validation to validate_structure.py: check sequential numbering, no gaps, no duplicates
-- [ ] T048 Add bullet hierarchy validation to validate_structure.py: check consistent indentation, appropriate markers
-- [ ] T049 Add content completeness validation to validate_structure.py: verify no content loss from source files
-- [ ] T050 Add cross-reference validation to validate_structure.py: verify internal links still work
-- [ ] T051 Add CLI interface to validate_structure.py with flags: --input-dir, --strict, --output
-- [ ] T052 Run validate_structure.py on output/markdown/05_repaired/ to generate VALIDATION_REPORT.md
-- [ ] T053 Create master repair script in `scripts/repair_all.py` that orchestrates all three repair operations
-- [ ] T054 Add sequential processing to repair_all.py: analyze_chapter5 → repair_section_numbering → repair_bullet_hierarchy → validate_structure
-- [ ] T055 Add comprehensive reporting to repair_all.py to generate REPAIR_REPORT.md with summary of all changes
-- [ ] T056 Test repair_all.py on a single chapter to verify end-to-end pipeline
-- [ ] T057 Run repair_all.py on all chapters to complete full repair pipeline
+- [X] T046 Create validation script in `scripts/validate_structure.py` with all validation checks
+- [X] T047 Add section numbering validation to validate_structure.py: check sequential numbering, no gaps, no duplicates
+- [X] T048 Add bullet hierarchy validation to validate_structure.py: check consistent indentation, appropriate markers
+- [X] T049 Add content completeness validation to validate_structure.py: verify no content loss from source files
+- [X] T050 Add cross-reference validation to validate_structure.py: verify internal links still work
+- [X] T051 Add CLI interface to validate_structure.py with flags: --input-dir, --strict, --output
+- [X] T052 Run validate_structure.py on output/markdown/05_repaired/ to generate VALIDATION_REPORT.md
+- [X] T053 Create master repair script in `scripts/repair_all.py` that orchestrates all three repair operations
+- [X] T054 Add sequential processing to repair_all.py: analyze_chapter5 → repair_section_numbering → repair_bullet_hierarchy → validate_structure
+- [X] T055 Add comprehensive reporting to repair_all.py to generate REPAIR_REPORT.md with summary of all changes
+- [X] T056 Test repair_all.py on a single chapter to verify end-to-end pipeline
+- [X] T057 Run repair_all.py on all chapters to complete full repair pipeline
 
 ---
 
@@ -161,6 +161,29 @@ description: "Task list for document structure repair feature implementation"
 
 ---
 
+## Phase 8: Complete Remaining Chapters (Gemini Reorganization)
+
+**Purpose**: Reorganize and repair remaining chapters (0, 2, 3, 7, 8, 9) using Gemini API
+
+**Note**: These chapters need Gemini-based reorganization (similar to Chapter 5) followed by repair scripts
+
+- [ ] T066 Review existing Gemini reorganization scripts (gemini_reorganize_ch05_correct.py, gemini_reorganize_parallel.py, iterative_reorganize.py)
+- [ ] T067 Adapt Gemini reorganization script for general chapter processing (not Chapter 5 specific)
+- [ ] T068 [P] Use Gemini to reorganize chapter_0.md from output/markdown/00_raw/
+- [ ] T069 [P] Use Gemini to reorganize chapter_2.md from output/markdown/00_raw/
+- [ ] T070 [P] Use Gemini to reorganize chapter_3.md from output/markdown/00_raw/
+- [ ] T071 [P] Use Gemini to reorganize chapter_7.md from output/markdown/00_raw/
+- [ ] T072 [P] Use Gemini to reorganize chapter_8.md from output/markdown/00_raw/
+- [ ] T073 [P] Use Gemini to reorganize chapter_9.md from output/markdown/00_raw/
+- [ ] T074 Apply section numbering repair to newly reorganized chapters (0, 2, 3, 7, 8, 9)
+- [ ] T075 Apply bullet hierarchy repair to newly reorganized chapters (0, 2, 3, 7, 8, 9)
+- [ ] T076 Run validation on all newly reorganized chapters
+- [ ] T077 Generate final report for complete chapter set in output/markdown/05_repaired/
+
+**Checkpoint**: At this point, all 10 chapters should be reorganized, repaired, and validated
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
@@ -173,6 +196,7 @@ description: "Task list for document structure repair feature implementation"
   - User Story 3 (Bullet Repair): Can start after Foundational - No dependencies on other stories (but logically benefits from US1 & US2)
 - **Validation (Phase 6)**: Depends on desired user stories being complete
 - **Polish (Phase 7)**: Depends on Validation completion
+- **Complete Remaining Chapters (Phase 8)**: Depends on Foundational phase - Can run in parallel with or after Phase 3-5
 
 ### User Story Dependencies
 

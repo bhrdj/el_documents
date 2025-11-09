@@ -1,15 +1,15 @@
 # Document Structure Validation Report
 
 **Generated**: /home/steven/git/el_documents
-**Documents Validated**: 15
+**Documents Validated**: 13
 
 ## Summary
 
 **Overall Status**: FAIL
-- Total checks passed: 34
-- Total checks failed: 1
-- Total errors: 1
-- Total warnings: 648
+- Total checks passed: 28
+- Total checks failed: 57
+- Total errors: 57
+- Total warnings: 778
 
 ## Document Results
 
@@ -23,25 +23,15 @@
 
 **No issues found.**
 
-### ✓ ch05_compare_v01v02.md
+### ✓ VALIDATION_REPORT.md
 
 **Status**: PASS
-- Checks passed: 2
+- Checks passed: 3
 - Checks failed: 0
 - Errors: 0
-- Warnings: 7
+- Warnings: 0
 
-**Issues:**
-
-#### section_numbering (7 issues)
-
-- **WARNING** (line 13): Section number depth (1) doesn't match header level (4): 1
-- **WARNING** (line 21): Section number depth (1) doesn't match header level (4): 2
-- **WARNING** (line 35): Section number depth (1) doesn't match header level (4): 3
-- **WARNING** (line 47): Section number depth (1) doesn't match header level (4): 4
-- **WARNING** (line 55): Section number depth (1) doesn't match header level (4): 5
-- **WARNING** (line 61): Section number depth (1) doesn't match header level (4): 6
-- **WARNING** (line 70): Section number depth (1) doesn't match header level (4): 7
+**No issues found.**
 
 ### ✓ ch05_compare_v01v03.md
 
@@ -83,6 +73,222 @@
 - **WARNING** (line 122): List starts with non-zero indent: 3 spaces
 - **WARNING** (line 126): List starts with non-zero indent: 3 spaces
 - **WARNING** (line 131): List starts with non-zero indent: 3 spaces
+
+### ✗ ch05_older_stage02.md
+
+**Status**: FAIL
+- Checks passed: 1
+- Checks failed: 56
+- Errors: 56
+- Warnings: 144
+
+**Issues:**
+
+#### bullet_hierarchy (136 issues)
+
+- **WARNING** (line 857): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 928): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 931): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 935): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 938): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 942): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 945): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 948): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 951): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 954): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 957): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 960): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 963): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 980): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 990): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1007): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1017): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1026): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1037): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1054): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1108): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1124): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1148): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1183): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1208): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1219): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1233): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1270): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1274): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1467): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1593): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1645): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1715): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1971): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 1986): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 1990): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 1999): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2026): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2036): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2078): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2082): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2087): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2093): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2099): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2189): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 2192): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2438): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2545): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2709): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2933): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2948): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 2965): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3027): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3034): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3086): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3543): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3571): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3597): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3613): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3625): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3673): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 3744): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3747): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3751): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3754): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3758): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3761): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3764): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3767): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3770): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3773): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3776): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3779): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3796): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3806): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3823): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3833): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3842): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3853): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3870): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3924): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3940): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3964): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 3999): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4024): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4035): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4049): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4086): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4090): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4377): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4428): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4740): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4755): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 4759): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 4768): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4795): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4805): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4847): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 4910): List starts with non-zero indent: 4 spaces
+- **WARNING** (line 4913): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5160): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5267): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5431): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5679): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5695): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5756): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5811): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5865): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5905): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 5969): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6216): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6326): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6353): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6379): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6395): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6407): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6488): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6501): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6513): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6527): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6542): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6557): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6585): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6607): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6621): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6637): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6640): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6654): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6657): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6660): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6667): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6677): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6680): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6696): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6712): List starts with non-zero indent: 2 spaces
+- **WARNING** (line 6728): List starts with non-zero indent: 2 spaces
+
+#### section_numbering (64 issues)
+
+- **ERROR** (line 101): Non-sequential section number: [5, 1, 2, 16] -> [5, 1, 3, 1]
+- **ERROR** (line 117): Non-sequential section number: [5, 1, 3, 7] -> [5, 2, 1]
+- **ERROR** (line 137): Non-sequential section number: [5, 2, 1, 6] -> [5, 5, 1]
+- **ERROR** (line 257): Non-sequential section number: [5, 10, 5] -> [5, 10, 7]
+- **WARNING** (line 269): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.4
+- **ERROR** (line 269): Non-sequential section number: [5, 10, 7, 1, 1, 3] -> [5, 10, 7, 1, 1, 1, 4]
+- **WARNING** (line 271): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.5
+- **ERROR** (line 275): Non-sequential section number: [5, 10, 7, 2] -> [5, 10, 7, 1, 1]
+- **ERROR** (line 303): Non-sequential section number: [5, 10, 7, 1, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 305): Non-sequential section number: [5, 10, 7, 1, 2, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 309): Non-sequential section number: [5, 10, 7, 1, 2, 2] -> [5, 10, 7, 1, 2, 2]
+- **ERROR** (line 334): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 336): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 338): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 5]
+- **ERROR** (line 418): Non-sequential section number: [5, 10, 7, 3, 5] -> [5, 10, 7, 3, 1, 6]
+- **ERROR** (line 422): Non-sequential section number: [5, 10, 7, 3, 1, 6] -> [5, 1, 1]
+- **ERROR** (line 519): Non-sequential section number: [5, 1, 2, 16] -> [5, 1, 3, 1]
+- **ERROR** (line 535): Non-sequential section number: [5, 1, 3, 7] -> [5, 2, 1]
+- **ERROR** (line 556): Non-sequential section number: [5, 2, 1, 6] -> [5, 5, 1]
+- **ERROR** (line 675): Non-sequential section number: [5, 10, 5] -> [5, 10, 7]
+- **WARNING** (line 687): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.4
+- **ERROR** (line 687): Non-sequential section number: [5, 10, 7, 1, 1, 3] -> [5, 10, 7, 1, 1, 1, 4]
+- **WARNING** (line 689): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.5
+- **ERROR** (line 693): Non-sequential section number: [5, 10, 7, 2] -> [5, 10, 7, 1, 1]
+- **ERROR** (line 722): Non-sequential section number: [5, 10, 7, 1, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 724): Non-sequential section number: [5, 10, 7, 1, 2, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 728): Non-sequential section number: [5, 10, 7, 1, 2, 2] -> [5, 10, 7, 1, 2, 2]
+- **ERROR** (line 752): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 754): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 756): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 5]
+- **ERROR** (line 833): Non-sequential section number: [5, 10, 7, 3, 5] -> [5, 10, 7, 3, 1, 6]
+- **ERROR** (line 845): Non-sequential section number: [5, 10, 7, 3, 1, 6] -> [5, 1, 1]
+- **ERROR** (line 1374): Non-sequential section number: [5, 1, 2, 16] -> [5, 1, 3, 1]
+- **ERROR** (line 1496): Non-sequential section number: [5, 1, 3, 7] -> [5, 2, 1]
+- **ERROR** (line 1625): Non-sequential section number: [5, 2, 1, 6] -> [5, 5, 1]
+- **ERROR** (line 2300): Non-sequential section number: [5, 10, 5] -> [5, 10, 7]
+- **WARNING** (line 2351): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.4
+- **ERROR** (line 2351): Non-sequential section number: [5, 10, 7, 1, 1, 3] -> [5, 10, 7, 1, 1, 1, 4]
+- **WARNING** (line 2363): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.5
+- **ERROR** (line 2380): Non-sequential section number: [5, 10, 7, 2] -> [5, 10, 7, 1, 1]
+- **ERROR** (line 2484): Non-sequential section number: [5, 10, 7, 1, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 2486): Non-sequential section number: [5, 10, 7, 1, 2, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 2499): Non-sequential section number: [5, 10, 7, 1, 2, 2] -> [5, 10, 7, 1, 2, 2]
+- **ERROR** (line 2644): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 2652): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 2660): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 5]
+- **ERROR** (line 3630): Non-sequential section number: [5, 10, 7, 3, 5] -> [5, 10, 7, 3, 1, 6]
+- **ERROR** (line 3661): Non-sequential section number: [5, 10, 7, 3, 1, 6] -> [5, 1, 1]
+- **ERROR** (line 4190): Non-sequential section number: [5, 1, 2, 16] -> [5, 1, 3, 1]
+- **ERROR** (line 4280): Non-sequential section number: [5, 1, 3, 7] -> [5, 2, 1]
+- **ERROR** (line 4408): Non-sequential section number: [5, 2, 1, 6] -> [5, 5, 1]
+- **ERROR** (line 5022): Non-sequential section number: [5, 10, 5] -> [5, 10, 7]
+- **WARNING** (line 5073): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.4
+- **ERROR** (line 5073): Non-sequential section number: [5, 10, 7, 1, 1, 3] -> [5, 10, 7, 1, 1, 1, 4]
+- **WARNING** (line 5085): Section number depth (7) doesn't match header level (6): 5.10.7.1.1.1.5
+- **ERROR** (line 5102): Non-sequential section number: [5, 10, 7, 2] -> [5, 10, 7, 1, 1]
+- **ERROR** (line 5206): Non-sequential section number: [5, 10, 7, 1, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 5208): Non-sequential section number: [5, 10, 7, 1, 2, 1] -> [5, 10, 7, 1, 2, 1]
+- **ERROR** (line 5221): Non-sequential section number: [5, 10, 7, 1, 2, 2] -> [5, 10, 7, 1, 2, 2]
+- **ERROR** (line 5366): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 5374): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 2]
+- **ERROR** (line 5382): Non-sequential section number: [5, 10, 7, 1, 2] -> [5, 10, 7, 1, 5]
+- **ERROR** (line 6412): Non-sequential section number: [5, 10, 7, 3, 5] -> [5, 10, 7, 3, 1, 6]
+- **ERROR** (line 6492): Non-sequential section number: [5, 11, 2] -> [5, 11, 2, 2]
 
 ### ✓ ch05_v01.md
 
@@ -283,26 +489,6 @@
 - **WARNING** (line 12850): List starts with non-zero indent: 2 spaces
 - **WARNING** (line 12868): List starts with non-zero indent: 2 spaces
 
-### ✓ ch05_v02.md
-
-**Status**: PASS
-- Checks passed: 2
-- Checks failed: 0
-- Errors: 0
-- Warnings: 7
-
-**Issues:**
-
-#### section_numbering (7 issues)
-
-- **WARNING** (line 276): Section number depth (3) doesn't match header level (4): 5.4.1
-- **WARNING** (line 282): Section number depth (3) doesn't match header level (4): 5.4.2
-- **WARNING** (line 288): Section number depth (3) doesn't match header level (4): 5.4.3
-- **WARNING** (line 294): Section number depth (3) doesn't match header level (4): 5.4.4
-- **WARNING** (line 309): Section number depth (3) doesn't match header level (4): 5.4.5
-- **WARNING** (line 315): Section number depth (3) doesn't match header level (4): 5.4.6
-- **WARNING** (line 322): Section number depth (3) doesn't match header level (4): 5.4.7
-
 ### ✓ ch05_v03.md
 
 **Status**: PASS
@@ -313,27 +499,7 @@
 
 **No issues found.**
 
-### ✓ ch05_v03_fixed.md
-
-**Status**: PASS
-- Checks passed: 3
-- Checks failed: 0
-- Errors: 0
-- Warnings: 0
-
-**No issues found.**
-
-### ✓ ch05_v03_progress.md
-
-**Status**: PASS
-- Checks passed: 3
-- Checks failed: 0
-- Errors: 0
-- Warnings: 0
-
-**No issues found.**
-
-### ✓ ch05_v04_renumbered.md
+### ✓ ch05_v07_final.md
 
 **Status**: PASS
 - Checks passed: 3

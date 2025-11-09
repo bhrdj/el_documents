@@ -11,7 +11,7 @@ This feature repairs structural issues in processed markdown documents from the 
 ## Status
 
 **Branch**: `005-document-structure-repair`
-**Status**: Implemented (User Stories 1, 2, 3 complete)
+**Status**: Phases 1-7 Complete, Phase 8 Pending
 **Priority**: P1 (User Stories 1 & 2), P2 (User Story 3)
 
 ### Implementation Summary
@@ -19,9 +19,13 @@ This feature repairs structural issues in processed markdown documents from the 
 - ✓ User Story 1: Chapter 5 Content Restoration - COMPLETE (T001-T020)
 - ✓ User Story 2: Section Numbering Repair - COMPLETE (T021-T032)
 - ✓ User Story 3: Bullet Hierarchy Repair - COMPLETE (T033-T045)
+- ✓ Phase 6: Validation & Reporting - COMPLETE (T046-T055)
+- ✓ Phase 7: Polish & Cross-Cutting Concerns - COMPLETE (T058-T065)
+- ⏳ Phase 8: Complete Remaining Chapters - PENDING (T066-T077)
 - ✓ Post-fix: Unicode bullets converted to markdown in Chapter 5
-- Files processed: 5 chapters in `output/markdown/05_repaired/`
-- Section numbering: 598 headers renumbered across all files
+- Files processed: 3 chapters in `output/markdown/05_repaired/` (chapters 1, 4, 5)
+- Remaining: 6 chapters to reorganize (0, 2, 3, 7, 8, 9)
+- Section numbering: 598 headers renumbered across processed files
 - Bullet lists: 3,298 items in proper markdown format (updated after Unicode fix)
 
 ## Implementation
@@ -33,8 +37,8 @@ This feature repairs structural issues in processed markdown documents from the 
 - `scripts/repair_bullet_hierarchy.py` - ✓ Repair bullet list formatting
 - `scripts/fix_unicode_bullets.py` - ✓ Convert Unicode bullets to markdown (post-fix utility)
 - `scripts/pdf_generator.py` - ✓ Enhanced with consolidated preprocessing pipeline
-- `scripts/validate_structure.py` - Not implemented (manual validation used)
-- `scripts/repair_all.py` - Not implemented (scripts run individually)
+- `scripts/validate_structure.py` - ✓ Comprehensive structure validation
+- `scripts/repair_all.py` - ✓ Master orchestration script (complete pipeline)
 
 ### Library Modules
 
@@ -66,18 +70,22 @@ See [quickstart.md](quickstart.md) for detailed usage instructions.
 ### Quick Start
 
 ```bash
-# Individual repairs (recommended workflow)
+# Complete pipeline (recommended for full processing)
+.venv/bin/python scripts/repair_all.py --verbose
+
+# Complete pipeline with dry-run (preview changes)
+.venv/bin/python scripts/repair_all.py --dry-run --verbose
+
+# Process single chapter
+.venv/bin/python scripts/repair_all.py --chapter 5 --verbose
+
+# Validate repaired documents
+.venv/bin/python scripts/validate_structure.py --input-dir output/markdown/05_repaired --output output/markdown/05_repaired/VALIDATION_REPORT.md
+
+# Individual repairs (manual workflow)
 .venv/bin/python scripts/analyze_chapter5.py --restore
 .venv/bin/python scripts/repair_section_numbering.py --verbose
 .venv/bin/python scripts/repair_bullet_hierarchy.py --verbose
-
-# Preview changes with dry-run
-.venv/bin/python scripts/repair_section_numbering.py --dry-run --verbose
-.venv/bin/python scripts/repair_bullet_hierarchy.py --dry-run --verbose
-
-# Process single chapter
-.venv/bin/python scripts/repair_section_numbering.py --chapter chapter_05.md
-.venv/bin/python scripts/repair_bullet_hierarchy.py --chapter chapter_05.md
 ```
 
 ## Technical Details
