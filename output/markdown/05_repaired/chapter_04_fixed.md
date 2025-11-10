@@ -1,337 +1,11 @@
 ---
 
-# 1 CHAPTER 4: CHILD INTERACTION STRATEGIES
-## 1.1 Table of Contents
-- **4.1 Child Development in General**
+# 4 Child Interaction Strategies
 
-
-
-  * 4.1.1 Holistic Child Development
-
-
-
-  * 4.1.2 Personalized Care - Attentive and Flexible
-
-
-
-  * 4.1.3 Four Primary Aspects of Child Development
-
-
-
-    + 4.1.3.1 Why should we separate out different aspects of development?
-
-
-
-    + 4.1.3.2 Physical Development
-
-
-
-    + 4.1.3.3 Cognitive Development
-
-
-
-    + 4.1.3.4 Emotional Development
-
-
-
-    + 4.1.3.5 Social Development
-
-
-
-  * 4.1.4 Cross-cutting Aspects of Child Development
-
-
-
-    + 4.1.4.1 Language Development
-
-
-
-    + 4.1.4.2 Moral Development
-
-
-
-
-- **4.2 EL Child Development Framework: Motor, Brakes, and Pilot Controls**
-
-
-
-  * 4.2.1 Motor, Brakes, and Pilot Controls - The Overall Metaphor
-
-
-
-  * 4.2.2 Motor: Creativity, Capabilities
-
-
-
-    + 4.2.2.1 Motor Metaphor in-depth
-
-
-
-    + 4.2.2.2 Overview of the motor's cycle and diagram
-
-
-
-      - 4.2.2.2.1 Main parts of the motor's cycle
-
-
-
-      - 4.2.2.2.2 Types of experiences of fun and success
-
-
-
-      - 4.2.2.2.4 Courageous creative efforts
-
-
-
-      * 4.2.2.2.4.1 Growth through effort
-
-
-
-      * 4.2.2.2.4.2 Peak-end
-
-
-
-      * 4.2.2.2.4.3 Ambivalent choices
-
-
-
-      - 4.2.2.2.5 Stock of abilities and powers
-
-
-
-      - 4.2.2.2.6 Enabling fun and success
-
-
-
-
-- **Communicating with Children**
-
-
-
-  * Interactive Reading
-
-
-
-  * Incorporate Play into Conversations
-
-
-
-  * Sing and Use Rhymes
-
-
-
-  * Language Development Program Rules
-
-
-
-
-- **4.3 Behavior and Habit Change ("Disciplining" the Kids)**
-
-
-
-  * 4.3.0 The Safety Brake: When to Discipline
-
-
-
-  * 4.3.1 Guiding principle for discipline in the daycare
-
-
-
-    + 4.3.1.1 Redirection
-
-
-
-    + 4.3.1.2 Setting Clear Boundaries
-
-
-
-    + 4.3.1.3 Positive Reinforcement
-
-
-
-    + 4.3.1.4 Offering Choices
-
-
-
-    + 4.3.1.5 Time-In (Instead of Time-Out)
-
-
-
-    + 4.3.1.6 Consistent Routines
-
-
-
-    + 4.3.1.7 Modeling Appropriate Behavior
-
-
-
-    + 4.3.1.8 Ignoring Minor Misbehavior
-
-
-
-    + 4.3.1.9 Using Simple Language
-
-
-
-    + 4.3.1.10 Empathy and Understanding
-
-
-
-  * 4.3.2 Creativity and discipline
-
-
-
-    + 4.3.2.1 What are creativity and discipline?
-
-
-
-    + 4.3.2.2 Rule to decide if creativity or discipline is better
-
-
-
-    + 4.3.2.3 How to develop creativity or discipline in a child
-
-
-
-
-- **4.4 Stimulating the Kids**
-
-
-
-  * 4.4.1 Sensory Play
-
-
-
-    + 4.4.1.1 Textures and Materials
-
-
-
-  * 4.4.8 Routine and Structure
-
-
-
-    + 4.4.8.1 Consistent Routine
-
-
-
-    + 4.4.8.2 Positive Reinforcement
-
-
-
-  * 4.4.9 Language Development
-
-
-
-    + 4.4.9.1 Talking and Naming
-
-
-
-    + 4.4.9.2 Simple Commands
-
-
-
-
-- **4.5 Preserving the Privilege of Learning**
-
-
-
-  * 4.5.1 Introduction: Our Two-Part Mission
-
-
-
-  * 4.5.2 Part I: The Foundation of Privilege
-
-
-
-    + 4.5.2.1 What is a Privilege?
-
-
-
-    + 4.5.2.2 Common Privileges in EL Daycares
-
-
-
-    + 4.5.2.3 How Privileges Connect to EL Techniques
-
-
-
-  * 4.5.3 Part II: Keeping Book Reading and Flashcards Special
-
-
-
-    + 4.5.3.1 Why We Are Here
-
-
-
-    + 4.5.3.2 Core Beliefs
-
-
-
-    + 4.5.3.3 How to Preserve the Privilege
-
-
-
-      - 4.5.3.3.1 How to Use Flashcards (as a Privilege)
-
-
-
-      - 4.5.3.3.2 How to Read Books (as a Privilege)
-
-
-
-    + 4.5.3.4 Communication Guidelines
-
-
-
-    + 4.5.3.5 Key Reminder
-
-
-
-
-- **4.6 Give the child the decision-making power**
-
-
-
-  * 4.6.1 Self-Ownership→Creativity→Focus→Learning
-
-
-
-  * 4.6.2 Authority's Claim→Discipline→Avoidance
-
-
-
-  * 4.6.3 Let the child decide!
-
-
-
-
-- **4.7 Teasing versus Pushing**
-
-
-
-  * 4.7.1 Objective
-
-
-
-    + 4.7.1.1 Overview of the El Method
-
-
-
-    + 4.7.1.2 Key Principles of Learning for our infants/toddlers under 36 Months in our EL daycares
-
-
-
-    + 4.7.1.3 Understanding Teasing vs Pushing
-
-
-
-
----
-
-## 1.2 Child Development in General
+## Child Development in General
 **Every moment with a child is a chance to build a better future.**
 
-### 1.2.1 Scenario: Amani vs. Baraka
+### Scenario: Amani vs. Baraka
 Let us imagine two 8-month-old babies in different daycares.
 
 **Amani:**
@@ -424,7 +98,7 @@ Let us talk about Baraka.
 
 An EL caregiver is not only a babysitter but a **child developer**. Every moment you have with a child is an opportunity to support the child in cognitive development, social-emotional development, physical development, and language development.
 
-### 1.2.2 Holistic Child Development
+### Holistic Child Development
 1. "Holistic" and "Development"
 
   * Holistic refers to “whole-person.” Development means growth and change.
@@ -448,7 +122,7 @@ birth through early adulthood.
 
 governments etc.
 
-### 1.2.3 Personalized Care - Attentive and Flexible
+### Personalized Care - Attentive and Flexible
 What is personalized care?
 
 - It is focusing on a child as an individual with unique needs and a unique developmental pace.
@@ -519,7 +193,7 @@ and behaviours and history of the child.
 
 
 
-### 1.2.4 Four Primary Aspects of Child Development
+### Four Primary Aspects of Child Development
 - 4.1.3.1 Why should we separate out different aspects of development?
 
 
@@ -547,7 +221,7 @@ about the child between caregivers and family members.
 
 
 
-#### 1.2.4.1 Physical Development
+#### Physical Development
 Growth:
 
   * Growth of the body and brain, in size and detail, over time.
@@ -614,7 +288,7 @@ Sensory capabilities:
 
 
 
-#### 1.2.4.2 Cognitive Development
+#### Cognitive Development
 Cognitive development involves the way children learn to think, understand, and solve problems.
 
   * As children grow, they develop memory, reasoning skills, the ability to understand cause and
@@ -679,7 +353,7 @@ Examples of problem solving opportunities[just enough challenges without testing
 
 tujifanishe,tufanyiane]
 
-#### 1.2.4.3 Emotional Development
+#### Emotional Development
 Children gradually learn to identify, express, and manage their emotions.
 
   * They learn to recognize their own feelings, show them through actions, and identify them
@@ -711,7 +385,7 @@ other people.
 
 respect and politeness.
 
-#### 1.2.4.4 Social Development
+#### Social Development
 Social skills develop as children interact with adults and other children.
 
   * This includes sharing, cooperating, and communicating.
@@ -724,8 +398,8 @@ Social skills develop as children interact with adults and other children.
 
 peers and adults.
 
-### 1.2.5 Cross-cutting Aspects of Child Development
-#### 1.2.5.1 Language Development
+### Cross-cutting Aspects of Child Development
+#### Language Development
 What does language include?
 
   * Body and hand gestures, grunts, mouth noises, and any purposeful nonverbal communication
@@ -759,15 +433,15 @@ Cross-cutting connections between language development and primary aspects of ch
 
 accelerate language development, and vice/versa.
 
-#### 1.2.5.2 Moral Development:
+#### Moral Development:
 Moral development connects across emotions, cognitive thinking, and social interactions.
 As children grow, they begin to understand the difference between right and wrong and the gray areas in
 between.
 Their moral reasoning evolves through interactions with parents, caregivers, and other children, including
 structured guidance from adults.
 
-## 1.3 EL Child Development Framework: Motor, Brakes, and Pilot Controls
-### 1.3.1 Motor, Brakes, and Pilot Controls - The Overall Metaphor
+## EL Child Development Framework: Motor, Brakes, and Pilot Controls
+### Motor, Brakes, and Pilot Controls - The Overall Metaphor
 **Motor:** Capabilities and creativity
 - EL techniques that utilize a child's energy, curiosity, and emotions to drive holistic development
 
@@ -820,8 +494,8 @@ This illustrative metaphor connects with our "gari" and "ndege" classes:
 
 
 
-### 1.3.2 Motor: Creativity, Capabilities
-#### 1.3.2.1 Motor Metaphor in-depth
+### Motor: Creativity, Capabilities
+#### Motor Metaphor in-depth
 - What do motors do?
 
 
@@ -852,8 +526,8 @@ playful curiosity and creative joy.
 
 all aspects. This can be seen as their capabilities increase.
 
-#### 1.3.2.2 Overview of the motor’s cycle and diagram
-##### 1.3.2.2.1 Main parts of the motor’s cycle
+#### Overview of the motor’s cycle and diagram
+##### Main parts of the motor’s cycle
 7. The cycle looks like this:
 
   * a stack ([stack]) representing a situation or state of being, moving into:
@@ -928,7 +602,7 @@ games that they weren't able to play before, or play old games in new ways.
 
 
 
-##### 1.3.2.2.2 Types of experiences of fun and success (right-side stack [stack])
+##### Types of experiences of fun and success (right-side stack [stack])
 12. Exploring is a way that the child accesses external stimulation. The child actively moves through
 and observes their environment, using five senses to find out all the information they can.
 13. Experimenting is an even more active way to get stimulation from the external environment. The
@@ -941,12 +615,12 @@ new story about it, without needing to explore or experiment every time.
 15. Creating is when a child builds on their imagination to bring something from their imagined stories
 out into the real world.
 
-##### 1.3.2.2.3 Courageous creative efforts (lower movement <-)
-###### 1.3.2.2.3.1 Growth through effort
+##### Courageous creative efforts (lower movement <-)
+###### Growth through effort
 These efforts exercise kids physically and mentally.
 The exercise increases the kids' capabilities.
 
-###### 1.3.2.2.3.2 Peak-end
+###### Peak-end
 - The "peak" refers to the most joyful, exciting, or engaging parts of a child's activity or game.
 
 
@@ -1004,7 +678,7 @@ The exercise increases the kids' capabilities.
 
 
 
-###### 1.3.2.2.3.3 Ambivalent choices
+###### Ambivalent choices
 This is offering choices for the child to decide.
 
 - There are two types of choices:
@@ -1128,7 +802,7 @@ when the child fails to make the caregiver's secretly-preferred choice.
 
 
 
-##### 1.3.2.2.4 Stock of abilities and powers
+##### Stock of abilities and powers
 16. Physical abilities that we can look for in a child:
 
   * Mobility (gross motor): Rolling over, crawling on belly, crawling on hands and knees,
@@ -1258,7 +932,7 @@ to help the child pick-up physical and mental abilities.
 
 
 
-##### 1.3.2.2.5 Enabling fun and success (upper movement ->)
+##### Enabling fun and success (upper movement ->)
 External stimulation
 Spaced repetition
 Mnemonics
@@ -1266,7 +940,7 @@ Emotional safety
 Just enough challenge
 Transitional play
 
-## 1.4 Communicating with Children
+## Communicating with Children
 - Speak at their level---use simple, clear words.
 
 
@@ -1526,8 +1200,8 @@ Don’t
 
 them to expose the child to more vocabulary.
 
-## 1.5 Behavior and Habit Change ("Disciplining" the Kids)
-### 1.5.1 The Safety Brake: When to Discipline
+## Behavior and Habit Change ("Disciplining" the Kids)
+### The Safety Brake: When to Discipline
 **What is the Safety Brake?**
 
 Think of a car's safety brake---you pull it when something might go wrong.
@@ -1582,7 +1256,7 @@ The Safety Brake tells you when to pause, guide, or gently redirect, depending o
 
 The Safety Brake includes gently positive rewards and gently negative consequences. These increase discipline but decrease creativity, so use them thoughtfully and only when necessary.
 
-### 1.5.2 Guiding principle for discipline in the daycare
+### Guiding principle for discipline in the daycare
 - Disciplining young children in EL daycare without using corporal punishment involves a lot of
 
 
@@ -1590,7 +1264,7 @@ The Safety Brake includes gently positive rewards and gently negative consequenc
 patience, clear communication, and positive support.
 Here are some effective strategies:
 
-#### 1.5.2.1 Redirection
+#### Redirection
 - Explanation
 
 
@@ -1653,7 +1327,7 @@ these blocks!” or “Can you help me find all the red toys?”
 
 instead.
 
-#### 1.5.2.2 Setting Clear Boundaries
+#### Setting Clear Boundaries
 - Explanation:
 
 
@@ -1707,7 +1381,7 @@ allowed helps them start to make connections.
 
 
 
-#### 1.5.2.3 Positive Reinforcement
+#### Positive Reinforcement
 - Explanation
 
 
@@ -1755,7 +1429,7 @@ sense of accomplishment.
 systems, simple acknowledgments like stickers or stamps for good behavior
 can be effective.
 
-#### 1.5.2.4 Offering Choices
+#### Offering Choices
 - Explanation
 
 
@@ -1795,7 +1469,7 @@ child while still giving them a sense of control.
 
 like to sit with me or play with the toys?”
 
-#### 1.5.2.5 Time-In (Instead of Time-Out)
+#### Time-In (Instead of Time-Out)
 - Explanation
 
 
@@ -1846,7 +1520,7 @@ It’s okay to feel sad.”
 
 calming toy.
 
-#### 1.5.2.6 Consistent Routines
+#### Consistent Routines
 - Explanation
 
 
@@ -1908,7 +1582,7 @@ from one activity to another.
 
 
 
-#### 1.5.2.7 Modeling Appropriate Behavior
+#### Modeling Appropriate Behavior
 - Explanation
 
 
@@ -1963,7 +1637,7 @@ behavior.
 
 upset because the block tower fell down. Let’s build it together.”
 
-#### 1.5.2.8 Ignoring Minor Misbehavior
+#### Ignoring Minor Misbehavior
 - Explanation
 
 
@@ -2024,7 +1698,7 @@ mild pouting.
 
 immediately.
 
-#### 1.5.2.9 Using Simple Language
+#### Using Simple Language
 - Explanation
 
 
@@ -2081,7 +1755,7 @@ helps them understand what you want from them.
 
 away from others will help them learn.
 
-#### 1.5.2.10 Empathy and Understanding
+#### Empathy and Understanding
 - Explanation
 
 
@@ -2151,8 +1825,8 @@ emotions. “You’re feeling mad because your toy broke.
 helping children develop self-control, empathy, and good social skills without using any kind of
 corporal punishment.
 
-### 1.5.3 Creativity and discipline.
-#### 1.5.3.1 What are creativity and discipline?
+### Creativity and discipline.
+#### What are creativity and discipline?
 - Creativity: is creating new ideas and new actions in a playful way.
 
 
@@ -2162,7 +1836,7 @@ corporal punishment.
 
 
 
-#### 1.5.3.2 Rule to decide if creativity or discipline is better.
+#### Rule to decide if creativity or discipline is better.
 - Discipline is crucial when there is a risk of injury, damage to property, or financial loss.
 
 
@@ -2188,7 +1862,7 @@ punishment.
 
 
 
-#### 1.5.3.3 How to develop creativity or discipline in a child
+#### How to develop creativity or discipline in a child
 - Discipline:
 
 
@@ -2282,7 +1956,7 @@ consequences of their actions in safe, controlled settings.
 
 knowing when to introduce structure or discipline for their safety or learning.
 
-## 1.6 Stimulating the Kids
+## Stimulating the Kids
 - Stimulating children who are two years old and below in EL daycares involves engaging children’s
 
 
@@ -2294,8 +1968,8 @@ senses, encouraging exploration, and fostering early development.
 
 
 
-### 1.6.1 Sensory Play
-#### 1.6.1.1 Textures and Materials
+### Sensory Play
+#### Textures and Materials
 - Introduce a variety of materials such as soft fabrics, sponges, and textured toys,...etc.
 
 
@@ -2331,8 +2005,8 @@ supports early language development.
 
 
 
-### 1.6.2 Routine and Structure
-#### 1.6.2.1 Consistent Routine
+### Routine and Structure
+#### Consistent Routine
 - Establish a predictable daily routine that includes time for meals, naps, outdoor play, and structured
 
 
@@ -2351,7 +2025,7 @@ the day’s activities.
 
 and tantrums.
 
-#### 1.6.2.2 Positive Reinforcement:
+#### Positive Reinforcement:
 - Use positive reinforcement to encourage desired behaviors.
 
 
@@ -2366,8 +2040,8 @@ and tantrums.
 
 their self-esteem and encourage them to continue positive behaviors.
 
-### 1.6.3 Language Development
-#### 1.6.3.1 Talking and Naming:
+### Language Development
+#### Talking and Naming:
 - Engage in frequent conversation with the children, even if they aren’t fully verbal yet.
 
 
@@ -2397,7 +2071,7 @@ actions and objects, fostering early language development.
 
 strategies for next steps, etc.
 
-#### 1.6.3.2 Simple Commands
+#### Simple Commands
 - This includes teaching children to follow simple commands like "clap your hands," "sit down," or
 
 
@@ -2447,8 +2121,8 @@ child bored and frustrated. Their creativity in daycare spaces may decrease.
   -
 -
 
-## 1.7 Preserving the Privilege of Learning
-### 1.7.1 Scenario: Chege vs. Duru
+## Preserving the Privilege of Learning
+### Scenario: Chege vs. Duru
 Let us imagine two 18-month-old children in different daycares.
 
 **Chege:**
@@ -2493,7 +2167,7 @@ Let us imagine two 18-month-old children in different daycares.
 
 A child who enjoys reading becomes unstoppable. When books and learning are treated as special privileges---as "candy" for the mind---children naturally want more.
 
-### 1.7.2 Introduction: Our Two-Part Mission
+### Introduction: Our Two-Part Mission
 This section presents a two-part approach to understanding and applying the privilege philosophy in EL daycares:
 
 - **Part I: The Foundation** - Establishing the core philosophy on privileges, what they are, how they are earned, and how they teach responsibility in all areas of our daycare.
@@ -2505,8 +2179,8 @@ This section presents a two-part approach to understanding and applying the priv
 
 
 
-### 1.7.3 Part I: The Foundation of Privilege
-#### 1.7.3.1 What is a Privilege?
+### Part I: The Foundation of Privilege
+#### What is a Privilege?
 A privilege is not a right.
 
 **A right** is something every child gets, no matter what. This includes:
@@ -2555,7 +2229,7 @@ We never take away a right.
 
 
 
-#### 1.7.3.2 Common Privileges in EL Daycares
+#### Common Privileges in EL Daycares
 At Everything is Learning daycares, common privileges include:
 - Playing with a specific favorite toy (like tyres and big black ball)
 
@@ -2580,7 +2254,7 @@ At Everything is Learning daycares, common privileges include:
 
 **Important Note:** This is not a punishment. We must avoid turning this into a negative. Our focus is 100% on learning from choices. Our tone should always be calm, firm, and respectful.
 
-#### 1.7.3.3 How Privileges Connect to EL Techniques
+#### How Privileges Connect to EL Techniques
 The privilege philosophy fits perfectly with the "Everything is Learning" (EL) techniques we already use every day:
 
 **Followed Interest:**
@@ -2637,8 +2311,8 @@ The privilege philosophy fits perfectly with the "Everything is Learning" (EL) t
 
 **Key Message:** Every privilege we give must teach responsibility.
 
-### 1.7.4 Part II: Keeping Book Reading and Flashcards Special
-#### 1.7.4.1 Why We Are Here
+### Part II: Keeping Book Reading and Flashcards Special
+#### Why We Are Here
 We want to protect the joy of reading:
 - We never want reading to feel like pressure or hard work
 
@@ -2659,7 +2333,7 @@ We want to protect the joy of reading:
 
 **Key Idea:** The best words for learning come from the child's own life. When learning is about them, it is very powerful.
 
-#### 1.7.4.2 Core Beliefs
+#### Core Beliefs
 Let's affirm these together:
 - The child leads
 
@@ -2686,8 +2360,8 @@ Let's affirm these together:
 
 
 
-#### 1.7.4.3 How to Preserve the Privilege
-##### 1.7.4.3.1 How to Use Flashcards (as a Privilege)
+#### How to Preserve the Privilege
+##### How to Use Flashcards (as a Privilege)
 **Be a Detective First (Follow Interest):**
 - Watch the child
 
@@ -2758,7 +2432,7 @@ Let's affirm these together:
 
 
 
-##### 1.7.4.3.2 How to Read Books (as a Privilege)
+##### How to Read Books (as a Privilege)
 **Make It an Invitation (Follow Interest):**
 - Don't say, "Sit down, it's reading time."
 
@@ -2825,7 +2499,7 @@ Let's affirm these together:
 
 
 
-#### 1.7.4.4 Communication Guidelines
+#### Communication Guidelines
 **Caregivers should practice saying:**
 - "You earned your flashcards today, well done."
 
@@ -2858,11 +2532,11 @@ Let's affirm these together:
 
 
 
-#### 1.7.4.5 Key Reminder
+#### Key Reminder
 A child who enjoys reading becomes unstoppable. Our job is to protect that joy every single day.
 
-## 1.8 Give the child the decision-making power
-### 1.8.1 Self-Ownership→Creativity→Focus→Learning
+## Give the child the decision-making power
+### Self-Ownership→Creativity→Focus→Learning
 - If the child decides they want to do some action on their own,
 
 
@@ -2884,7 +2558,7 @@ A child who enjoys reading becomes unstoppable. Our job is to protect that joy e
 
 
 
-### 1.8.2 Authority’s Claim→Discipline→Avoidance
+### Authority’s Claim→Discipline→Avoidance
 - If an authority figure gives out commands, bribes, and/or punishments about an action, then the child
 
 
@@ -2915,7 +2589,7 @@ focused on exploring the current activity.
 
 
 
-### 1.8.3 Let the child decide!
+### Let the child decide!
 - By letting the child decide, you allow them to stimulate themselves to learn creatively.
 
 
@@ -3009,15 +2683,15 @@ self-chosen interest in the adults’ communication
 
 
 
-## 1.9 Teasing versus Pushing
-### 1.9.1 Objective:
+## Teasing versus Pushing
+### Objective:
 - To ensure all EL caregivers understand the balance between encouraging learning and avoiding
 
 
 
 stress, boredom or frustration in the child while implementing the EL techniques.
 
-#### 1.9.1.1 Overview of the El Method
+#### Overview of the El Method
 - The EL Method is based on the idea that infants/toddlers are capable of learning at an early age if
 
 
@@ -3029,7 +2703,7 @@ they are given information in an enjoyable and engaging manner.
 
 
 
-#### 1.9.1.2 Key Principles of Learning for our infants/toddlers under 36 Months in our EL daycares
+#### Key Principles of Learning for our infants/toddlers under 36 Months in our EL daycares
 - Learning is Fun
 
 
@@ -3049,7 +2723,7 @@ they are given information in an enjoyable and engaging manner.
 
 Each child is unique; watch for cues of readiness and adjust accordingly.
 
-#### 1.9.1.3 Understanding Teasing vs Pushing
+#### Understanding Teasing vs Pushing
 ★ Teasing (Positive Encouragement)
 Definition: Gently encouraging the child with enthusiasm, presenting learning as a
 game.
